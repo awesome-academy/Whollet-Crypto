@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD20CCED291E26D000C8F1EE /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CCE0291E26D000C8F1EE /* BaseViewModel.swift */; };
+		DD20CCEF291E26D000C8F1EE /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CCE3291E26D000C8F1EE /* AppStrings.swift */; };
+		DD20CCF1291E26D000C8F1EE /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CCE6291E26D000C8F1EE /* Endpoints.swift */; };
+		DD20CCF2291E26D000C8F1EE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CCE8291E26D000C8F1EE /* APIError.swift */; };
+		DD20CCF3291E26D000C8F1EE /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CCE9291E26D000C8F1EE /* APICaller.swift */; };
+		DD20CCF4291E26D000C8F1EE /* BaseRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CCEB291E26D000C8F1EE /* BaseRequestParams.swift */; };
+		DD20CD00291E27DD00C8F1EE /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CCFB291E27DD00C8F1EE /* UIImageView+Extension.swift */; };
+		DD20CD01291E27DD00C8F1EE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CCFC291E27DD00C8F1EE /* UIColor+Extension.swift */; };
+		DD20CD02291E27DD00C8F1EE /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CCFD291E27DD00C8F1EE /* UILabel+Extension.swift */; };
+		DD20CD03291E27DD00C8F1EE /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CCFE291E27DD00C8F1EE /* UIVIew+Extension.swift */; };
+		DD20CD04291E27DD00C8F1EE /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CCFF291E27DD00C8F1EE /* UIScreen+Extension.swift */; };
 		DD8DCE44291CFD1400F6BC9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DCE43291CFD1400F6BC9F /* AppDelegate.swift */; };
 		DD8DCE46291CFD1400F6BC9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DCE45291CFD1400F6BC9F /* SceneDelegate.swift */; };
 		DD8DCE48291CFD1400F6BC9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DCE47291CFD1400F6BC9F /* ViewController.swift */; };
@@ -33,6 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD20CCE0291E26D000C8F1EE /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		DD20CCE3291E26D000C8F1EE /* AppStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		DD20CCE6291E26D000C8F1EE /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		DD20CCE8291E26D000C8F1EE /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		DD20CCE9291E26D000C8F1EE /* APICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		DD20CCEB291E26D000C8F1EE /* BaseRequestParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequestParams.swift; sourceTree = "<group>"; };
+		DD20CCFB291E27DD00C8F1EE /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		DD20CCFC291E27DD00C8F1EE /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DD20CCFD291E27DD00C8F1EE /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		DD20CCFE291E27DD00C8F1EE /* UIVIew+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
+		DD20CCFF291E27DD00C8F1EE /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		DD8DCE40291CFD1400F6BC9F /* Whollet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whollet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8DCE43291CFD1400F6BC9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD8DCE45291CFD1400F6BC9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +92,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD20CCDE291E26D000C8F1EE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DD20CCDF291E26D000C8F1EE /* ViewModel */,
+				DD20CCE1291E26D000C8F1EE /* Constants */,
+				DD20CCE5291E26D000C8F1EE /* Network */,
+				DD20CCEA291E26D000C8F1EE /* Params */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DD20CCDF291E26D000C8F1EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD20CCE0291E26D000C8F1EE /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD20CCE1291E26D000C8F1EE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DD20CCE3291E26D000C8F1EE /* AppStrings.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DD20CCE5291E26D000C8F1EE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DD20CCE6291E26D000C8F1EE /* Endpoints.swift */,
+				DD20CCE7291E26D000C8F1EE /* API */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DD20CCE7291E26D000C8F1EE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DD20CCE8291E26D000C8F1EE /* APIError.swift */,
+				DD20CCE9291E26D000C8F1EE /* APICaller.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DD20CCEA291E26D000C8F1EE /* Params */ = {
+			isa = PBXGroup;
+			children = (
+				DD20CCEB291E26D000C8F1EE /* BaseRequestParams.swift */,
+			);
+			path = Params;
+			sourceTree = "<group>";
+		};
+		DD20CCFA291E27DD00C8F1EE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DD20CCFB291E27DD00C8F1EE /* UIImageView+Extension.swift */,
+				DD20CCFC291E27DD00C8F1EE /* UIColor+Extension.swift */,
+				DD20CCFD291E27DD00C8F1EE /* UILabel+Extension.swift */,
+				DD20CCFE291E27DD00C8F1EE /* UIVIew+Extension.swift */,
+				DD20CCFF291E27DD00C8F1EE /* UIScreen+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DD8DCE37291CFD1400F6BC9F = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +198,8 @@
 		DD8DCE74291CFD4E00F6BC9F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				DD20CCFA291E27DD00C8F1EE /* Extensions */,
+				DD20CCDE291E26D000C8F1EE /* Core */,
 				DD8DCE47291CFD1400F6BC9F /* ViewController.swift */,
 				DD8DCE49291CFD1400F6BC9F /* Main.storyboard */,
 				DD8DCE4E291CFD1600F6BC9F /* LaunchScreen.storyboard */,
@@ -249,9 +338,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD20CCEF291E26D000C8F1EE /* AppStrings.swift in Sources */,
 				DD8DCE48291CFD1400F6BC9F /* ViewController.swift in Sources */,
+				DD20CCF4291E26D000C8F1EE /* BaseRequestParams.swift in Sources */,
+				DD20CCED291E26D000C8F1EE /* BaseViewModel.swift in Sources */,
+				DD20CCF3291E26D000C8F1EE /* APICaller.swift in Sources */,
 				DD8DCE44291CFD1400F6BC9F /* AppDelegate.swift in Sources */,
+				DD20CD00291E27DD00C8F1EE /* UIImageView+Extension.swift in Sources */,
+				DD20CD03291E27DD00C8F1EE /* UIVIew+Extension.swift in Sources */,
+				DD20CD04291E27DD00C8F1EE /* UIScreen+Extension.swift in Sources */,
+				DD20CCF1291E26D000C8F1EE /* Endpoints.swift in Sources */,
+				DD20CD02291E27DD00C8F1EE /* UILabel+Extension.swift in Sources */,
+				DD20CD01291E27DD00C8F1EE /* UIColor+Extension.swift in Sources */,
 				DD8DCE46291CFD1400F6BC9F /* SceneDelegate.swift in Sources */,
+				DD20CCF2291E26D000C8F1EE /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
