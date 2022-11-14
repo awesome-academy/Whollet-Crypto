@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD20CD2E291E30F900C8F1EE /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD21291E30F900C8F1EE /* BaseViewModel.swift */; };
+		DD20CD30291E30F900C8F1EE /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD24291E30F900C8F1EE /* AppConstants.swift */; };
+		DD20CD32291E30F900C8F1EE /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD27291E30F900C8F1EE /* Endpoints.swift */; };
+		DD20CD33291E30F900C8F1EE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD29291E30F900C8F1EE /* APIError.swift */; };
+		DD20CD34291E30F900C8F1EE /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD2A291E30F900C8F1EE /* APICaller.swift */; };
+		DD20CD35291E30F900C8F1EE /* BaseRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD2C291E30F900C8F1EE /* BaseRequestParams.swift */; };
+		DD20CD36291E30F900C8F1EE /* CoinsRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD2D291E30F900C8F1EE /* CoinsRequestParams.swift */; };
+		DD20CD3D291E312F00C8F1EE /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD38291E312F00C8F1EE /* UIImageView+Extension.swift */; };
+		DD20CD3E291E312F00C8F1EE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD39291E312F00C8F1EE /* UIColor+Extension.swift */; };
+		DD20CD3F291E312F00C8F1EE /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD3A291E312F00C8F1EE /* UILabel+Extension.swift */; };
+		DD20CD40291E312F00C8F1EE /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD3B291E312F00C8F1EE /* UIVIew+Extension.swift */; };
+		DD20CD41291E312F00C8F1EE /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD3C291E312F00C8F1EE /* UIScreen+Extension.swift */; };
 		DD8DCE44291CFD1400F6BC9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DCE43291CFD1400F6BC9F /* AppDelegate.swift */; };
-		DD8DCE46291CFD1400F6BC9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DCE45291CFD1400F6BC9F /* SceneDelegate.swift */; };
 		DD8DCE48291CFD1400F6BC9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DCE47291CFD1400F6BC9F /* ViewController.swift */; };
 		DD8DCE4B291CFD1400F6BC9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8DCE49291CFD1400F6BC9F /* Main.storyboard */; };
 		DD8DCE4D291CFD1600F6BC9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD8DCE4C291CFD1600F6BC9F /* Assets.xcassets */; };
 		DD8DCE50291CFD1600F6BC9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8DCE4E291CFD1600F6BC9F /* LaunchScreen.storyboard */; };
+		DD9E097F2921D95F00308D34 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E097E2921D95E00308D34 /* ImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +45,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD20CD21291E30F900C8F1EE /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		DD20CD24291E30F900C8F1EE /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		DD20CD27291E30F900C8F1EE /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		DD20CD29291E30F900C8F1EE /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		DD20CD2A291E30F900C8F1EE /* APICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		DD20CD2C291E30F900C8F1EE /* BaseRequestParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequestParams.swift; sourceTree = "<group>"; };
+		DD20CD2D291E30F900C8F1EE /* CoinsRequestParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinsRequestParams.swift; sourceTree = "<group>"; };
+		DD20CD38291E312F00C8F1EE /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		DD20CD39291E312F00C8F1EE /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DD20CD3A291E312F00C8F1EE /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		DD20CD3B291E312F00C8F1EE /* UIVIew+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
+		DD20CD3C291E312F00C8F1EE /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		DD8DCE40291CFD1400F6BC9F /* Whollet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whollet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8DCE43291CFD1400F6BC9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD8DCE45291CFD1400F6BC9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DD8DCE47291CFD1400F6BC9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD8DCE4A291CFD1400F6BC9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD8DCE4C291CFD1600F6BC9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +66,7 @@
 		DD8DCE51291CFD1600F6BC9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD8DCE56291CFD1600F6BC9F /* WholletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WholletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8DCE60291CFD1700F6BC9F /* WholletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WholletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9E097E2921D95E00308D34 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +94,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD20CD1F291E30F900C8F1EE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DD20CD20291E30F900C8F1EE /* ViewModel */,
+				DD20CD22291E30F900C8F1EE /* Constants */,
+				DD20CD26291E30F900C8F1EE /* Network */,
+				DD20CD2B291E30F900C8F1EE /* Params */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DD20CD20291E30F900C8F1EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD20CD21291E30F900C8F1EE /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD20CD22291E30F900C8F1EE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DD20CD24291E30F900C8F1EE /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DD20CD26291E30F900C8F1EE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DD20CD27291E30F900C8F1EE /* Endpoints.swift */,
+				DD20CD28291E30F900C8F1EE /* API */,
+				DD9E097E2921D95E00308D34 /* ImageManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DD20CD28291E30F900C8F1EE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DD20CD29291E30F900C8F1EE /* APIError.swift */,
+				DD20CD2A291E30F900C8F1EE /* APICaller.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DD20CD2B291E30F900C8F1EE /* Params */ = {
+			isa = PBXGroup;
+			children = (
+				DD20CD2C291E30F900C8F1EE /* BaseRequestParams.swift */,
+				DD20CD2D291E30F900C8F1EE /* CoinsRequestParams.swift */,
+			);
+			path = Params;
+			sourceTree = "<group>";
+		};
+		DD20CD37291E312F00C8F1EE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DD20CD38291E312F00C8F1EE /* UIImageView+Extension.swift */,
+				DD20CD39291E312F00C8F1EE /* UIColor+Extension.swift */,
+				DD20CD3A291E312F00C8F1EE /* UILabel+Extension.swift */,
+				DD20CD3B291E312F00C8F1EE /* UIVIew+Extension.swift */,
+				DD20CD3C291E312F00C8F1EE /* UIScreen+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DD8DCE37291CFD1400F6BC9F = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				DD8DCE43291CFD1400F6BC9F /* AppDelegate.swift */,
-				DD8DCE45291CFD1400F6BC9F /* SceneDelegate.swift */,
 				DD8DCE4C291CFD1600F6BC9F /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -111,6 +201,8 @@
 		DD8DCE74291CFD4E00F6BC9F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				DD20CD37291E312F00C8F1EE /* Extensions */,
+				DD20CD1F291E30F900C8F1EE /* Core */,
 				DD8DCE47291CFD1400F6BC9F /* ViewController.swift */,
 				DD8DCE49291CFD1400F6BC9F /* Main.storyboard */,
 				DD8DCE4E291CFD1600F6BC9F /* LaunchScreen.storyboard */,
@@ -128,6 +220,7 @@
 				DD8DCE3C291CFD1400F6BC9F /* Sources */,
 				DD8DCE3D291CFD1400F6BC9F /* Frameworks */,
 				DD8DCE3E291CFD1400F6BC9F /* Resources */,
+				DD20CD43291E4E2E00C8F1EE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -244,14 +337,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DD20CD43291E4E2E00C8F1EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD8DCE3C291CFD1400F6BC9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD20CD30291E30F900C8F1EE /* AppConstants.swift in Sources */,
 				DD8DCE48291CFD1400F6BC9F /* ViewController.swift in Sources */,
+				DD20CD35291E30F900C8F1EE /* BaseRequestParams.swift in Sources */,
+				DD20CD3E291E312F00C8F1EE /* UIColor+Extension.swift in Sources */,
+				DD20CD2E291E30F900C8F1EE /* BaseViewModel.swift in Sources */,
+				DD20CD34291E30F900C8F1EE /* APICaller.swift in Sources */,
+				DD9E097F2921D95F00308D34 /* ImageManager.swift in Sources */,
+				DD20CD40291E312F00C8F1EE /* UIVIew+Extension.swift in Sources */,
 				DD8DCE44291CFD1400F6BC9F /* AppDelegate.swift in Sources */,
-				DD8DCE46291CFD1400F6BC9F /* SceneDelegate.swift in Sources */,
+				DD20CD36291E30F900C8F1EE /* CoinsRequestParams.swift in Sources */,
+				DD20CD3D291E312F00C8F1EE /* UIImageView+Extension.swift in Sources */,
+				DD20CD32291E30F900C8F1EE /* Endpoints.swift in Sources */,
+				DD20CD41291E312F00C8F1EE /* UIScreen+Extension.swift in Sources */,
+				DD20CD3F291E312F00C8F1EE /* UILabel+Extension.swift in Sources */,
+				DD20CD33291E30F900C8F1EE /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
