@@ -1,6 +1,6 @@
 import Foundation
 
 class BaseViewModel: NSObject {
-    var bindViewModelToController: (() -> ()) = { }
+    var bind: (() -> Void) = { }
 }
 

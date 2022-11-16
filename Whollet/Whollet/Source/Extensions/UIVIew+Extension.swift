@@ -10,4 +10,8 @@ extension UIView {
         layer.borderColor = UIColor.clear.cgColor
         layer.borderWidth = 1
     }
+    
+    func fullCornerRadius() {
+        layer.cornerRadius = frame.height / 2
+    }
 }
