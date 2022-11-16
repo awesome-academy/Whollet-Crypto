@@ -4,6 +4,16 @@ struct AppConstants {
     enum Strings: String {
         case nextStep = "Next Step"
         case getStarted = "Let's Get Started"
+        case iconPriceUp = "price_up"
+        case iconPriceDown = "price_down"
+        case icx = "ICX"
+        case allTopCoins = "All Top Coins"
+        case detailCoin = "Detail Coin"
+    }
+    
+    enum CGFloats: CGFloat {
+        case defaultRadius = 20.0
+        case borderWidthButton = 1.0
     }
     
     static let onboardings: [OnboardingModel] = [
@@ -26,6 +36,6 @@ struct AppConstants {
             image: "splash_3",
             title: "Your Safety is Our Top Priority",
             description: "Our top-notch security features will keep you completely safe."
-        ),
+        )
     ]
 }

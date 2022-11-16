@@ -6,8 +6,13 @@ struct CoinsRequestParams: BaseRequestParams {
     let perPage: Int
     let page: Int
     let sparkline: Bool
+    let ids: String?
     
     func toPath() -> String {
-        return "?vs_currency=\(vsCurrency)&order=\(order)&per_page=\(perPage)&page=\(page)&sparkline=\(sparkline)"
+        var path = "?vs_currency=\(vsCurrency)&order=\(order)&per_page=\(perPage)&page=\(page)&sparkline=\(sparkline)"
+        if let ids = ids {
+            path = "\(path)&ids=\(ids)"
+        }
+        return path
     }
 }

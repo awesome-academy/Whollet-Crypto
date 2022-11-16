@@ -17,10 +17,10 @@ final class OnboardingViewController: UIViewController {
     }
     
     private func configView() {
-        bottomView.layer.cornerRadius = 20
+        bottomView.layer.cornerRadius = AppConstants.CGFloats.defaultRadius.rawValue
         bottomView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        nextStepButton.layer.cornerRadius = nextStepButton.frame.height / 2
-        nextStepButton.layer.borderWidth = 1.0
+        nextStepButton.fullCornerRadius()
+        nextStepButton.layer.borderWidth = AppConstants.CGFloats.borderWidthButton.rawValue
         nextStepButton.layer.borderColor = UIColor.MyTheme.primary.cgColor
         titleText.resizeWithHeight()
         descriptionText.resizeWithHeight()
@@ -36,7 +36,11 @@ final class OnboardingViewController: UIViewController {
         descriptionText.text = pageData.description
 
         let isLastPage = index == AppConstants.onboardings.count - 1
-        nextStepButton.setTitle(isLastPage ? AppConstants.Strings.getStarted.rawValue : AppConstants.Strings.nextStep.rawValue, for: .normal)
+        nextStepButton.setTitle(
+            isLastPage
+            ? AppConstants.Strings.getStarted.rawValue
+            : AppConstants.Strings.nextStep.rawValue,
+            for: .normal)
         nextStepButton.setTitleColor(isLastPage ? .white : UIColor.MyTheme.primary, for: .normal)
         nextStepButton.backgroundColor = isLastPage ? UIColor.MyTheme.primary : .white
     }
@@ -50,7 +54,7 @@ final class OnboardingViewController: UIViewController {
     }
     
     @IBAction private func onTapNextStep(_ sender: Any) {
-        if (index == AppConstants.onboardings.count - 1) {
+        if index == AppConstants.onboardings.count - 1 {
             toHomePage()
         } else {
             index = (index + 1) % AppConstants.onboardings.count
