@@ -46,7 +46,9 @@ final class OnboardingViewController: UIViewController {
     }
     
     private func toHomePage() {
-        // to home page
+        let homePageController = HomeViewController.instantiate()
+        navigationController?.isNavigationBarHidden = false
+        self.navigationController?.pushViewController(homePageController, animated: true)
     }
     
     @IBAction private func onTapSkip(_ sender: UIButton) {
