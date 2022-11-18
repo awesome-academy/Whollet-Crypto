@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD20CD2E291E30F900C8F1EE /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD21291E30F900C8F1EE /* BaseViewModel.swift */; };
+		DD0837B22924EE930020F767 /* BehaviorSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0837B12924EE930020F767 /* BehaviorSubject.swift */; };
 		DD20CD30291E30F900C8F1EE /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD24291E30F900C8F1EE /* AppConstants.swift */; };
 		DD20CD32291E30F900C8F1EE /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD27291E30F900C8F1EE /* Endpoints.swift */; };
 		DD20CD33291E30F900C8F1EE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD29291E30F900C8F1EE /* APIError.swift */; };
@@ -34,6 +34,14 @@
 		DD9E09932921E9AC00308D34 /* OnboardingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9E09902921E9AC00308D34 /* OnboardingScreen.storyboard */; };
 		DD9E09942921E9AC00308D34 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E09912921E9AC00308D34 /* OnboardingViewController.swift */; };
 		DD9E09982921E9D500308D34 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E09972921E9D500308D34 /* OnboardingModel.swift */; };
+		DDAA0532292499E2007E61FA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAA0531292499E2007E61FA /* HomeViewModel.swift */; };
+		DDAA0534292499F7007E61FA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAA0533292499F7007E61FA /* HomeViewController.swift */; };
+		DDAA053929249A29007E61FA /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAA053829249A29007E61FA /* HomeViewController.storyboard */; };
+		DDAA054429249B34007E61FA /* CoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDAA054329249B34007E61FA /* CoinTableViewCell.xib */; };
+		DDAA054729249B56007E61FA /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAA054629249B56007E61FA /* CoinTableViewCell.swift */; };
+		DDAA054929249BC1007E61FA /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAA054829249BC1007E61FA /* String+Extension.swift */; };
+		DDAA054C29249C19007E61FA /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = DDAA054B29249C19007E61FA /* Charts */; };
+		DDAA05592924BD22007E61FA /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = DDAA05582924BD22007E61FA /* Reusable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DD20CD21291E30F900C8F1EE /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		DD0837B12924EE930020F767 /* BehaviorSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorSubject.swift; sourceTree = "<group>"; };
 		DD20CD24291E30F900C8F1EE /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		DD20CD27291E30F900C8F1EE /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		DD20CD29291E30F900C8F1EE /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
@@ -85,6 +93,12 @@
 		DD9E09902921E9AC00308D34 /* OnboardingScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnboardingScreen.storyboard; sourceTree = "<group>"; };
 		DD9E09912921E9AC00308D34 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		DD9E09972921E9D500308D34 /* OnboardingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		DDAA0531292499E2007E61FA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DDAA0533292499F7007E61FA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DDAA053829249A29007E61FA /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		DDAA054329249B34007E61FA /* CoinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinTableViewCell.xib; sourceTree = "<group>"; };
+		DDAA054629249B56007E61FA /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
+		DDAA054829249BC1007E61FA /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAA054C29249C19007E61FA /* Charts in Frameworks */,
+				DDAA05592924BD22007E61FA /* Reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +142,7 @@
 		DD20CD20291E30F900C8F1EE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				DD20CD21291E30F900C8F1EE /* BaseViewModel.swift */,
+				DD0837B12924EE930020F767 /* BehaviorSubject.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -176,6 +192,7 @@
 				DD20CD3A291E312F00C8F1EE /* UILabel+Extension.swift */,
 				DD20CD3B291E312F00C8F1EE /* UIVIew+Extension.swift */,
 				DD20CD3C291E312F00C8F1EE /* UIScreen+Extension.swift */,
+				DDAA054829249BC1007E61FA /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -282,6 +299,8 @@
 		DD9E098B2921E9AC00308D34 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DDAA054229249B1F007E61FA /* Components */,
+				DDAA0530292499D0007E61FA /* Home */,
 				DD9E098C2921E9AC00308D34 /* Launch */,
 				DD9E098F2921E9AC00308D34 /* Onboarding */,
 			);
@@ -325,6 +344,33 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		DDAA0530292499D0007E61FA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DDAA0531292499E2007E61FA /* HomeViewModel.swift */,
+				DDAA0533292499F7007E61FA /* HomeViewController.swift */,
+				DDAA053829249A29007E61FA /* HomeViewController.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DDAA054229249B1F007E61FA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DDAA054529249B38007E61FA /* CoinCell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DDAA054529249B38007E61FA /* CoinCell */ = {
+			isa = PBXGroup;
+			children = (
+				DDAA054329249B34007E61FA /* CoinTableViewCell.xib */,
+				DDAA054629249B56007E61FA /* CoinTableViewCell.swift */,
+			);
+			path = CoinCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -342,6 +388,10 @@
 			dependencies = (
 			);
 			name = Whollet;
+			packageProductDependencies = (
+				DDAA054B29249C19007E61FA /* Charts */,
+				DDAA05582924BD22007E61FA /* Reusable */,
+			);
 			productName = Whollet;
 			productReference = DD8DCE40291CFD1400F6BC9F /* Whollet.app */;
 			productType = "com.apple.product-type.application";
@@ -414,6 +464,10 @@
 				Base,
 			);
 			mainGroup = DD8DCE37291CFD1400F6BC9F;
+			packageReferences = (
+				DDAA054A29249C19007E61FA /* XCRemoteSwiftPackageReference "Charts" */,
+				DDAA05572924BD22007E61FA /* XCRemoteSwiftPackageReference "Reusable" */,
+			);
 			productRefGroup = DD8DCE41291CFD1400F6BC9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -431,7 +485,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9E09922921E9AC00308D34 /* LaunchScreen.storyboard in Resources */,
+				DDAA053929249A29007E61FA /* HomeViewController.storyboard in Resources */,
 				DD9E09932921E9AC00308D34 /* OnboardingScreen.storyboard in Resources */,
+				DDAA054429249B34007E61FA /* CoinTableViewCell.xib in Resources */,
 				DD8DCE4D291CFD1600F6BC9F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,13 +536,15 @@
 				DD8635D729234ECF00213909 /* CoinsRepository.swift in Sources */,
 				DD20CD30291E30F900C8F1EE /* AppConstants.swift in Sources */,
 				DD8635D129234E7200213909 /* CoinsResponseModel.swift in Sources */,
+				DDAA0532292499E2007E61FA /* HomeViewModel.swift in Sources */,
 				DD8635E4292350E700213909 /* GetChartUseCase.swift in Sources */,
+				DD0837B22924EE930020F767 /* BehaviorSubject.swift in Sources */,
 				DD20CD35291E30F900C8F1EE /* BaseRequestParams.swift in Sources */,
 				DD8635D329234E9F00213909 /* ChartRequestParams.swift in Sources */,
 				DD20CD3E291E312F00C8F1EE /* UIColor+Extension.swift in Sources */,
-				DD20CD2E291E30F900C8F1EE /* BaseViewModel.swift in Sources */,
 				DD9E09982921E9D500308D34 /* OnboardingModel.swift in Sources */,
 				DD20CD34291E30F900C8F1EE /* APICaller.swift in Sources */,
+				DDAA0534292499F7007E61FA /* HomeViewController.swift in Sources */,
 				DD9E097F2921D95F00308D34 /* ImageManager.swift in Sources */,
 				DD20CD40291E312F00C8F1EE /* UIVIew+Extension.swift in Sources */,
 				DD9E09942921E9AC00308D34 /* OnboardingViewController.swift in Sources */,
@@ -495,12 +553,14 @@
 				DD20CD36291E30F900C8F1EE /* CoinsRequestParams.swift in Sources */,
 				DD20CD3D291E312F00C8F1EE /* UIImageView+Extension.swift in Sources */,
 				DD20CD32291E30F900C8F1EE /* Endpoints.swift in Sources */,
+				DDAA054729249B56007E61FA /* CoinTableViewCell.swift in Sources */,
 				DD20CD41291E312F00C8F1EE /* UIScreen+Extension.swift in Sources */,
 				DD8635DB29234F0000213909 /* CoinServices.swift in Sources */,
 				DD8635E1292350CC00213909 /* GetCoinsUseCase.swift in Sources */,
 				DD20CD3F291E312F00C8F1EE /* UILabel+Extension.swift in Sources */,
 				DD20CD33291E30F900C8F1EE /* APIError.swift in Sources */,
 				DD8635CF29234E5F00213909 /* ChartResponseModel.swift in Sources */,
+				DDAA054929249BC1007E61FA /* String+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,6 +891,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDAA054A29249C19007E61FA /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DDAA05572924BD22007E61FA /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDAA054B29249C19007E61FA /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDAA054A29249C19007E61FA /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+		DDAA05582924BD22007E61FA /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDAA05572924BD22007E61FA /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD8DCE38291CFD1400F6BC9F /* Project object */;
 }

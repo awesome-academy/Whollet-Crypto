@@ -11,7 +11,7 @@ final class CoinServices {
         request params: CoinsRequestParams,
         completion: @escaping(Result<CoinsResponseModel, Error>) -> Void) {
         return API.requestData(
-            urlString: Endpoints.coinsURL.rawValue + params.toPath(),
+            urlString: Endpoints.coinsURL.rawValue + Endpoints.coins.rawValue + params.toPath(),
             method: APICaller.HTTPMethod.GET.rawValue,
             expecting: CoinsResponseModel.self,
             completion: completion
@@ -22,7 +22,7 @@ final class CoinServices {
         request params: ChartRequestParams,
         completion: @escaping(Result<ChartResponseModel, Error>) -> Void) {
         return API.requestData(
-            urlString: Endpoints.coinsURL.rawValue + params.toPath(),
+            urlString: Endpoints.coinsURL.rawValue + Endpoints.detailedCoin.rawValue + params.toPath(),
             method: APICaller.HTTPMethod.GET.rawValue,
             expecting: ChartResponseModel.self,
             completion: completion

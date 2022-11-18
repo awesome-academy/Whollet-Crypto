@@ -13,5 +13,7 @@ extension UIColor {
     struct MyTheme {
         static var primary: UIColor { return UIColor(argb: 0xFF347AF0) }
         static var primaryBackground: UIColor { return UIColor(argb: 0xFFEDF1F9) }
+        static var priceUp: UIColor { return UIColor(argb: 0xFF75BF72) }
+        static var priceDown: UIColor { return UIColor(argb: 0xFFDF5060) }
     }
 }

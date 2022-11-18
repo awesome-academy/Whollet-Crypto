@@ -14,6 +14,12 @@ struct AppConstants {
     enum CGFloats: CGFloat {
         case defaultRadius = 20.0
         case borderWidthButton = 1.0
+        case appBarTitleSize = 26.0
+        case depositButtonBorder = 3.0
+    }
+    
+    enum Ints: Int {
+        case priceStringSize = 8
     }
     
     static let onboardings: [OnboardingModel] = [
