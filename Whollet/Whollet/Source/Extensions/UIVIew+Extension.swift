@@ -11,6 +11,10 @@ extension UIView {
         layer.borderWidth = 1
     }
     
+    func fullCornerRadiusWithHeight() {
+        layer.cornerRadius = frame.height / 2 * UIScreen.resizeHeight
+    }
+    
     func fullCornerRadius() {
         layer.cornerRadius = frame.height / 2
     }
