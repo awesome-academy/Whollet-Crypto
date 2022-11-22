@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E7167AFD8C52FD27299524F /* Pods_Whollet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A09B2222917605F0EEF7F0 /* Pods_Whollet.framework */; };
 		900766EF292BBF280030F020 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900766ED292BBF280030F020 /* SearchTableViewCell.swift */; };
 		900766F0292BBF280030F020 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 900766EE292BBF280030F020 /* SearchTableViewCell.xib */; };
 		900766F3292BC9D60030F020 /* Whollet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 900766F1292BC9D60030F020 /* Whollet.xcdatamodeld */; };
@@ -15,6 +16,14 @@
 		900766FA292BCCC30030F020 /* SearchHistoryRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900766F9292BCCC30030F020 /* SearchHistoryRepositoryImpl.swift */; };
 		900766FC292BCDA20030F020 /* GetSearchHistoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900766FB292BCDA20030F020 /* GetSearchHistoryUseCase.swift */; };
 		901730A1292C8840003D9CDD /* SearchHistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901730A0292C8840003D9CDD /* SearchHistoryRepository.swift */; };
+		906C2187292CAABB0017740A /* TitilliumWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 906C2183292CAABB0017740A /* TitilliumWeb-Bold.ttf */; };
+		906C2188292CAABB0017740A /* TitilliumWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 906C2184292CAABB0017740A /* TitilliumWeb-Regular.ttf */; };
+		906C2189292CAABB0017740A /* TitilliumWeb-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 906C2185292CAABB0017740A /* TitilliumWeb-SemiBold.ttf */; };
+		906C218A292CAABB0017740A /* TitilliumWeb-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 906C2186292CAABB0017740A /* TitilliumWeb-Light.ttf */; };
+		906C218D292CAB110017740A /* LoadWalletUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C218B292CAB110017740A /* LoadWalletUseCase.swift */; };
+		906C218E292CAB110017740A /* CreateWalletUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C218C292CAB110017740A /* CreateWalletUseCase.swift */; };
+		906C2190292CAB460017740A /* WalletRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C218F292CAB460017740A /* WalletRepositoryImpl.swift */; };
+		906C2192292CAB590017740A /* WalletRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C2191292CAB590017740A /* WalletRepository.swift */; };
 		90E8C8D6292B6FAA00F264E3 /* SearchCoinRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8D5292B6FAA00F264E3 /* SearchCoinRequestParams.swift */; };
 		90E8C8D8292B716C00F264E3 /* SearchCoinResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8D7292B716C00F264E3 /* SearchCoinResponseModel.swift */; };
 		90E8C8DB292B76BE00F264E3 /* GetSearchCoinUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8DA292B76BE00F264E3 /* GetSearchCoinUseCase.swift */; };
@@ -84,6 +93,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19A09B2222917605F0EEF7F0 /* Pods_Whollet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whollet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61F3BA7BD8F952254624C86A /* Pods-Whollet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whollet.debug.xcconfig"; path = "Target Support Files/Pods-Whollet/Pods-Whollet.debug.xcconfig"; sourceTree = "<group>"; };
 		900766ED292BBF280030F020 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		900766EE292BBF280030F020 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		900766F2292BC9D60030F020 /* Whollet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Whollet.xcdatamodel; sourceTree = "<group>"; };
@@ -92,6 +103,14 @@
 		900766F9292BCCC30030F020 /* SearchHistoryRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryRepositoryImpl.swift; sourceTree = "<group>"; };
 		900766FB292BCDA20030F020 /* GetSearchHistoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSearchHistoryUseCase.swift; sourceTree = "<group>"; };
 		901730A0292C8840003D9CDD /* SearchHistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryRepository.swift; sourceTree = "<group>"; };
+		906C2183292CAABB0017740A /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
+		906C2184292CAABB0017740A /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; };
+		906C2185292CAABB0017740A /* TitilliumWeb-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-SemiBold.ttf"; sourceTree = "<group>"; };
+		906C2186292CAABB0017740A /* TitilliumWeb-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Light.ttf"; sourceTree = "<group>"; };
+		906C218B292CAB110017740A /* LoadWalletUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadWalletUseCase.swift; sourceTree = "<group>"; };
+		906C218C292CAB110017740A /* CreateWalletUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWalletUseCase.swift; sourceTree = "<group>"; };
+		906C218F292CAB460017740A /* WalletRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRepositoryImpl.swift; sourceTree = "<group>"; };
+		906C2191292CAB590017740A /* WalletRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRepository.swift; sourceTree = "<group>"; };
 		90E8C8D5292B6FAA00F264E3 /* SearchCoinRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoinRequestParams.swift; sourceTree = "<group>"; };
 		90E8C8D7292B716C00F264E3 /* SearchCoinResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoinResponseModel.swift; sourceTree = "<group>"; };
 		90E8C8DA292B76BE00F264E3 /* GetSearchCoinUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSearchCoinUseCase.swift; sourceTree = "<group>"; };
@@ -143,6 +162,7 @@
 		DDAA054329249B34007E61FA /* CoinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinTableViewCell.xib; sourceTree = "<group>"; };
 		DDAA054629249B56007E61FA /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
 		DDAA054829249BC1007E61FA /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		EDFB2F9F16BC36AE3E5F5AC3 /* Pods-Whollet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whollet.release.xcconfig"; path = "Target Support Files/Pods-Whollet/Pods-Whollet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +172,7 @@
 			files = (
 				DDAA054C29249C19007E61FA /* Charts in Frameworks */,
 				DDAA05592924BD22007E61FA /* Reusable in Frameworks */,
+				3E7167AFD8C52FD27299524F /* Pods_Whollet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +193,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B2963C610039CD066CE671E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19A09B2222917605F0EEF7F0 /* Pods_Whollet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		900766EB292BBF030030F020 /* SearchCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +218,17 @@
 			path = Local;
 			sourceTree = "<group>";
 		};
+		906C2182292CAABB0017740A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				906C2183292CAABB0017740A /* TitilliumWeb-Bold.ttf */,
+				906C2184292CAABB0017740A /* TitilliumWeb-Regular.ttf */,
+				906C2185292CAABB0017740A /* TitilliumWeb-SemiBold.ttf */,
+				906C2186292CAABB0017740A /* TitilliumWeb-Light.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		90E8C8D9292B758900F264E3 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +237,15 @@
 				90E8C8E3292B9AAC00F264E3 /* SearchViewController.storyboard */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		BCB635324DC014C757E4A00F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61F3BA7BD8F952254624C86A /* Pods-Whollet.debug.xcconfig */,
+				EDFB2F9F16BC36AE3E5F5AC3 /* Pods-Whollet.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		DD20CD1F291E30F900C8F1EE /* Core */ = {
@@ -283,6 +332,7 @@
 			children = (
 				DD8635D629234ECF00213909 /* CoinsRepository.swift */,
 				901730A0292C8840003D9CDD /* SearchHistoryRepository.swift */,
+				906C2191292CAB590017740A /* WalletRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -309,6 +359,7 @@
 			children = (
 				DD8635DD2923509300213909 /* CoinsRepositoryImpl.swift */,
 				900766F9292BCCC30030F020 /* SearchHistoryRepositoryImpl.swift */,
+				906C218F292CAB460017740A /* WalletRepositoryImpl.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -316,6 +367,8 @@
 		DD8635DF292350BE00213909 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				906C218C292CAB110017740A /* CreateWalletUseCase.swift */,
+				906C218B292CAB110017740A /* LoadWalletUseCase.swift */,
 				DD8635E0292350CC00213909 /* GetCoinsUseCase.swift */,
 				DD8635E3292350E700213909 /* GetChartUseCase.swift */,
 				90E8C8DA292B76BE00F264E3 /* GetSearchCoinUseCase.swift */,
@@ -330,6 +383,8 @@
 			children = (
 				DD8DCE42291CFD1400F6BC9F /* Whollet */,
 				DD8DCE41291CFD1400F6BC9F /* Products */,
+				BCB635324DC014C757E4A00F /* Pods */,
+				8B2963C610039CD066CE671E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -356,6 +411,7 @@
 		DD8DCE73291CFD3A00F6BC9F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				906C2182292CAABB0017740A /* Font */,
 				DD8DCE43291CFD1400F6BC9F /* AppDelegate.swift */,
 				DD8DCE4C291CFD1600F6BC9F /* Assets.xcassets */,
 				900766F1292BC9D60030F020 /* Whollet.xcdatamodeld */,
@@ -492,10 +548,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD8DCE6A291CFD1700F6BC9F /* Build configuration list for PBXNativeTarget "Whollet" */;
 			buildPhases = (
+				AAF5ED086A6C20B1D6C5AB6C /* [CP] Check Pods Manifest.lock */,
 				DD8DCE3C291CFD1400F6BC9F /* Sources */,
 				DD8DCE3D291CFD1400F6BC9F /* Frameworks */,
 				DD8DCE3E291CFD1400F6BC9F /* Resources */,
 				DD20CD43291E4E2E00C8F1EE /* ShellScript */,
+				8FF3B0FDBA228493DDB4C1EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -604,9 +662,13 @@
 				DD9E09922921E9AC00308D34 /* LaunchScreen.storyboard in Resources */,
 				DDAA053929249A29007E61FA /* HomeViewController.storyboard in Resources */,
 				90E8C8E4292B9AAC00F264E3 /* SearchViewController.storyboard in Resources */,
+				906C2188292CAABB0017740A /* TitilliumWeb-Regular.ttf in Resources */,
+				906C2187292CAABB0017740A /* TitilliumWeb-Bold.ttf in Resources */,
 				DD9E09932921E9AC00308D34 /* OnboardingScreen.storyboard in Resources */,
 				DDAA054429249B34007E61FA /* CoinTableViewCell.xib in Resources */,
+				906C218A292CAABB0017740A /* TitilliumWeb-Light.ttf in Resources */,
 				DD8DCE4D291CFD1600F6BC9F /* Assets.xcassets in Resources */,
+				906C2189292CAABB0017740A /* TitilliumWeb-SemiBold.ttf in Resources */,
 				900766F0292BBF280030F020 /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +690,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8FF3B0FDBA228493DDB4C1EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Whollet/Pods-Whollet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Whollet/Pods-Whollet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Whollet/Pods-Whollet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAF5ED086A6C20B1D6C5AB6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Whollet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DD20CD43291E4E2E00C8F1EE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -656,6 +757,7 @@
 				90E8C8DB292B76BE00F264E3 /* GetSearchCoinUseCase.swift in Sources */,
 				DD20CD30291E30F900C8F1EE /* AppConstants.swift in Sources */,
 				900766F3292BC9D60030F020 /* Whollet.xcdatamodeld in Sources */,
+				906C218D292CAB110017740A /* LoadWalletUseCase.swift in Sources */,
 				DD8635D129234E7200213909 /* CoinsResponseModel.swift in Sources */,
 				90E8C8E2292B996800F264E3 /* SearchViewController.swift in Sources */,
 				90E8C8DE292B992400F264E3 /* SearchViewModel.swift in Sources */,
@@ -667,6 +769,7 @@
 				DD20CD35291E30F900C8F1EE /* BaseRequestParams.swift in Sources */,
 				DD8635D329234E9F00213909 /* ChartRequestParams.swift in Sources */,
 				DD20CD3E291E312F00C8F1EE /* UIColor+Extension.swift in Sources */,
+				906C2190292CAB460017740A /* WalletRepositoryImpl.swift in Sources */,
 				DD9E09982921E9D500308D34 /* OnboardingModel.swift in Sources */,
 				DD20CD34291E30F900C8F1EE /* APICaller.swift in Sources */,
 				DDAA0534292499F7007E61FA /* HomeViewController.swift in Sources */,
@@ -676,6 +779,7 @@
 				DDA3DC262927508300ED7E3E /* DetailViewModel.swift in Sources */,
 				DD9E09942921E9AC00308D34 /* OnboardingViewController.swift in Sources */,
 				DD8635DE2923509300213909 /* CoinsRepositoryImpl.swift in Sources */,
+				906C2192292CAB590017740A /* WalletRepository.swift in Sources */,
 				900766EF292BBF280030F020 /* SearchTableViewCell.swift in Sources */,
 				DD8DCE44291CFD1400F6BC9F /* AppDelegate.swift in Sources */,
 				DD20CD36291E30F900C8F1EE /* CoinsRequestParams.swift in Sources */,
@@ -695,6 +799,7 @@
 				DD20CD3F291E312F00C8F1EE /* UILabel+Extension.swift in Sources */,
 				DD20CD33291E30F900C8F1EE /* APIError.swift in Sources */,
 				DDA3DC1F2927507D00ED7E3E /* CoinsViewController.swift in Sources */,
+				906C218E292CAB110017740A /* CreateWalletUseCase.swift in Sources */,
 				DD8635CF29234E5F00213909 /* ChartResponseModel.swift in Sources */,
 				DDAA054929249BC1007E61FA /* String+Extension.swift in Sources */,
 			);
@@ -857,6 +962,7 @@
 		};
 		DD8DCE6B291CFD1700F6BC9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F3BA7BD8F952254624C86A /* Pods-Whollet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -886,6 +992,7 @@
 		};
 		DD8DCE6C291CFD1700F6BC9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDFB2F9F16BC36AE3E5F5AC3 /* Pods-Whollet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
