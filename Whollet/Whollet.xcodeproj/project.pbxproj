@@ -24,6 +24,9 @@
 		906C218E292CAB110017740A /* CreateWalletUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C218C292CAB110017740A /* CreateWalletUseCase.swift */; };
 		906C2190292CAB460017740A /* WalletRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C218F292CAB460017740A /* WalletRepositoryImpl.swift */; };
 		906C2192292CAB590017740A /* WalletRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C2191292CAB590017740A /* WalletRepository.swift */; };
+		906C219B292CC3230017740A /* WelcomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906C2199292CC3230017740A /* WelcomeViewController.storyboard */; };
+		906C219C292CC3230017740A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C219A292CC3230017740A /* WelcomeViewController.swift */; };
+		906C219E292CC4A30017740A /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C219D292CC4A30017740A /* UIButton+Extension.swift */; };
 		90E8C8D6292B6FAA00F264E3 /* SearchCoinRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8D5292B6FAA00F264E3 /* SearchCoinRequestParams.swift */; };
 		90E8C8D8292B716C00F264E3 /* SearchCoinResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8D7292B716C00F264E3 /* SearchCoinResponseModel.swift */; };
 		90E8C8DB292B76BE00F264E3 /* GetSearchCoinUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8DA292B76BE00F264E3 /* GetSearchCoinUseCase.swift */; };
@@ -111,6 +114,9 @@
 		906C218C292CAB110017740A /* CreateWalletUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWalletUseCase.swift; sourceTree = "<group>"; };
 		906C218F292CAB460017740A /* WalletRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRepositoryImpl.swift; sourceTree = "<group>"; };
 		906C2191292CAB590017740A /* WalletRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRepository.swift; sourceTree = "<group>"; };
+		906C2199292CC3230017740A /* WelcomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WelcomeViewController.storyboard; sourceTree = "<group>"; };
+		906C219A292CC3230017740A /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		906C219D292CC4A30017740A /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		90E8C8D5292B6FAA00F264E3 /* SearchCoinRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoinRequestParams.swift; sourceTree = "<group>"; };
 		90E8C8D7292B716C00F264E3 /* SearchCoinResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoinResponseModel.swift; sourceTree = "<group>"; };
 		90E8C8DA292B76BE00F264E3 /* GetSearchCoinUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSearchCoinUseCase.swift; sourceTree = "<group>"; };
@@ -229,6 +235,15 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		906C2198292CC3230017740A /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				906C2199292CC3230017740A /* WelcomeViewController.storyboard */,
+				906C219A292CC3230017740A /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		90E8C8D9292B758900F264E3 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +329,7 @@
 				DD20CD3B291E312F00C8F1EE /* UIVIew+Extension.swift */,
 				DD20CD3C291E312F00C8F1EE /* UIScreen+Extension.swift */,
 				DDAA054829249BC1007E61FA /* String+Extension.swift */,
+				906C219D292CC4A30017740A /* UIButton+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -434,6 +450,7 @@
 		DD9E098B2921E9AC00308D34 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				906C2198292CC3230017740A /* Welcome */,
 				90E8C8D9292B758900F264E3 /* Search */,
 				DDA3DC212927508300ED7E3E /* Detail */,
 				DDA3DC1A2927507D00ED7E3E /* Coins */,
@@ -661,6 +678,7 @@
 				DDA3DC202927507D00ED7E3E /* CoinsViewController.storyboard in Resources */,
 				DD9E09922921E9AC00308D34 /* LaunchScreen.storyboard in Resources */,
 				DDAA053929249A29007E61FA /* HomeViewController.storyboard in Resources */,
+				906C219B292CC3230017740A /* WelcomeViewController.storyboard in Resources */,
 				90E8C8E4292B9AAC00F264E3 /* SearchViewController.storyboard in Resources */,
 				906C2188292CAABB0017740A /* TitilliumWeb-Regular.ttf in Resources */,
 				906C2187292CAABB0017740A /* TitilliumWeb-Bold.ttf in Resources */,
@@ -773,6 +791,7 @@
 				DD9E09982921E9D500308D34 /* OnboardingModel.swift in Sources */,
 				DD20CD34291E30F900C8F1EE /* APICaller.swift in Sources */,
 				DDAA0534292499F7007E61FA /* HomeViewController.swift in Sources */,
+				906C219E292CC4A30017740A /* UIButton+Extension.swift in Sources */,
 				DD9E097F2921D95F00308D34 /* ImageManager.swift in Sources */,
 				DDA3DC1E2927507D00ED7E3E /* CoinsViewModel.swift in Sources */,
 				DD20CD40291E312F00C8F1EE /* UIVIew+Extension.swift in Sources */,
@@ -784,6 +803,7 @@
 				DD8DCE44291CFD1400F6BC9F /* AppDelegate.swift in Sources */,
 				DD20CD36291E30F900C8F1EE /* CoinsRequestParams.swift in Sources */,
 				90E8C8D6292B6FAA00F264E3 /* SearchCoinRequestParams.swift in Sources */,
+				906C219C292CC3230017740A /* WelcomeViewController.swift in Sources */,
 				DDA3DC252927508300ED7E3E /* DetailViewController.swift in Sources */,
 				DDA3DC2B2927512900ED7E3E /* SpinnerFooter.swift in Sources */,
 				DD20CD3D291E312F00C8F1EE /* UIImageView+Extension.swift in Sources */,
