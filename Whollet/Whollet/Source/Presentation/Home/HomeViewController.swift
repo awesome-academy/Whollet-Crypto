@@ -42,7 +42,7 @@ final class HomeViewController: UIViewController, StoryboardSceneBased {
                 }
             } else {
                 DispatchQueue.main.async {
-                    self.tableView.tableFooterView = self.createSpinnerFooter()
+                    self.tableView.tableFooterView = SpinnerFooter.loadFromNib()
                 }
             }
         }
@@ -56,7 +56,7 @@ final class HomeViewController: UIViewController, StoryboardSceneBased {
                 DispatchQueue.main.async {
                     self.icxPriceText.text = "$ " + String(
                         text: price,
-                        size: AppConstants.Ints.priceStringSize.rawValue)
+                        size: AppConstants.Ints.priceStringSize)
                 }
                 
             }
@@ -68,14 +68,14 @@ final class HomeViewController: UIViewController, StoryboardSceneBased {
         icxPriceView.backgroundColor = UIColor.MyTheme.primary
         icxPriceText.resizeWithHeight()
         
-        tabBarBottomView.layer.cornerRadius = AppConstants.CGFloats.defaultRadius.rawValue
+        tabBarBottomView.layer.cornerRadius = AppConstants.CGFloats.defaultRadius
         tabBarBottomView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
-        topCoinView.layer.cornerRadius = AppConstants.CGFloats.defaultRadius.rawValue
+        topCoinView.layer.cornerRadius = AppConstants.CGFloats.defaultRadius
         topCoinView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
         depositButton.fullCornerRadius()
-        depositButton.layer.borderWidth = AppConstants.CGFloats.depositButtonBorder.rawValue
+        depositButton.layer.borderWidth = AppConstants.CGFloats.depositButtonBorder
         depositButton.layer.borderColor = UIColor.MyTheme.primaryBackground.cgColor
     }
     
@@ -86,26 +86,23 @@ final class HomeViewController: UIViewController, StoryboardSceneBased {
     }
     
     private func configNavigatorBar() {
-        navigationItem.title = AppConstants.Strings.icx.rawValue
+        navigationItem.title = AppConstants.Strings.icx
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
             NSAttributedString.Key.font: UIFont.boldSystemFont(
-                ofSize: AppConstants.CGFloats.appBarTitleSize.rawValue * UIScreen.resizeHeight)
+                ofSize: AppConstants.CGFloats.appBarTitleSize * UIScreen.resizeHeight)
         ]
         navigationController?.navigationBar.backgroundColor = UIColor.MyTheme.primary
     }
     
-    private func createSpinnerFooter() -> UIView {
-        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 100))
-        let spinner = UIActivityIndicatorView()
-        spinner.center = footerView.center
-        footerView.addSubview(spinner)
-        spinner.startAnimating()
-        return footerView
+    @IBAction func seeAllTopCoinsOnTap(_ sender: UIButton) {
+        let coinsPageController = CoinsViewController.instantiate()
+        self.navigationController?.pushViewController(coinsPageController, animated: true)
     }
     
-    @IBAction func seeAllTopCoinsOnTap(_ sender: UIButton) {
-        // TODO implement go Top Coin
+    
+    @IBAction func searchButtonOnClick(_ sender: UIButton) {
+        self.navigationController?.pushViewController(SearchViewController.instantiate(), animated: true)
     }
 }
 
@@ -124,6 +121,10 @@ extension HomeViewController: UITableViewDataSource {
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO implement go Detail Coin
+        let detailPageController = DetailViewController.instantiate()
+        if let id = coins[indexPath.row].id {
+            detailPageController.id = id
+        }
+        self.navigationController?.pushViewController(detailPageController, animated: true)
     }
 }
