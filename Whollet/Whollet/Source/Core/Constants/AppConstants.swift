@@ -1,25 +1,28 @@
 import Foundation
 
 struct AppConstants {
-    enum Strings: String {
-        case nextStep = "Next Step"
-        case getStarted = "Let's Get Started"
-        case iconPriceUp = "price_up"
-        case iconPriceDown = "price_down"
-        case icx = "ICX"
-        case allTopCoins = "All Top Coins"
-        case detailCoin = "Detail Coin"
+    enum Strings {
+        static let nextStep = "Next Step"
+        static let getStarted = "Let's Get Started"
+        static let iconPriceUp = "price_up"
+        static let iconPriceDown = "price_down"
+        static let icx = "ICX"
+        static let allTopCoins = "All Top Coins"
+        static let detailCoin = "Detail Coin"
+        static let searchCoin = "Search Coin"
     }
     
-    enum CGFloats: CGFloat {
-        case defaultRadius = 20.0
-        case borderWidthButton = 1.0
-        case appBarTitleSize = 26.0
-        case depositButtonBorder = 3.0
+    enum CGFloats {
+        static let defaultRadius = 20.0
+        static let borderWidthButton = 1.0
+        static let appBarTitleSize = 26.0
+        static let depositButtonBorder = 3.0
+        static let cellRadius = 10.0
     }
     
-    enum Ints: Int {
-        case priceStringSize = 8
+    enum Ints {
+        static let priceStringSize = 8
+        static let countLoad = 20
     }
     
     static let onboardings: [OnboardingModel] = [

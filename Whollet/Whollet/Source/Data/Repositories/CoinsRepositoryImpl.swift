@@ -28,4 +28,17 @@ final class CoinsRepositoryImpl: CoinsRepository {
             }
         }
     }
+    
+    func getSearchCoin(params: SearchCoinRequestParams, completion: @escaping (SearchCoinResponseModel?, Error?) -> Void) {
+        services.getSearchCoins(request: params) { result in
+            switch result {
+            case .success(let model):
+                completion(model, nil)
+                return
+            case .failure(let error):
+                completion(nil, error)
+                return
+            }
+        }
+    }
 }

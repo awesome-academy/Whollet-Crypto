@@ -28,4 +28,15 @@ final class CoinServices {
             completion: completion
         )
     }
+    
+    func getSearchCoins(
+        request params: SearchCoinRequestParams,
+        completion: @escaping(Result<SearchCoinResponseModel, Error>) -> Void) {
+        return API.requestData(
+            urlString: Endpoints.coinsURL.rawValue + Endpoints.saerch.rawValue + params.toPath(),
+            method: APICaller.HTTPMethod.GET.rawValue,
+            expecting: SearchCoinResponseModel.self,
+            completion: completion
+        )
+    }
 }

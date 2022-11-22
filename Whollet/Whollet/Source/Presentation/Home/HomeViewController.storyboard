@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="161" width="375" height="569"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Coins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSn-mw-A1k">
-                                        <rect key="frame" x="26" y="26" width="323" height="18"/>
+                                        <rect key="frame" x="26" y="26" width="271" height="18"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -59,6 +59,17 @@
                                             <action selector="seeAllTopCoinsOnTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qvz-f7-HsM"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrm-cM-AIi" userLabel="Search Button">
+                                        <rect key="frame" x="317" y="17.666666666666657" width="38" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zrm-cM-AIi" secondAttribute="height" multiplier="38:35" id="Zxf-1D-nhF"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <action selector="searchButtonOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5IB-7f-PXh"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -66,11 +77,13 @@
                                     <constraint firstAttribute="bottom" secondItem="mjt-wb-IW8" secondAttribute="bottom" constant="20" id="DQT-hb-lKq"/>
                                     <constraint firstItem="9Wl-ld-ELY" firstAttribute="leading" secondItem="d3S-9C-yH6" secondAttribute="leading" id="QJO-iY-iMl"/>
                                     <constraint firstItem="mjt-wb-IW8" firstAttribute="centerX" secondItem="d3S-9C-yH6" secondAttribute="centerX" id="Rzd-f9-DYU"/>
-                                    <constraint firstAttribute="trailing" secondItem="hSn-mw-A1k" secondAttribute="trailing" constant="26" id="YmL-cO-7ju"/>
                                     <constraint firstItem="9Wl-ld-ELY" firstAttribute="top" secondItem="hSn-mw-A1k" secondAttribute="bottom" constant="26" id="hAI-f7-Dah"/>
                                     <constraint firstAttribute="trailing" secondItem="9Wl-ld-ELY" secondAttribute="trailing" id="jBr-lB-0ux"/>
                                     <constraint firstItem="hSn-mw-A1k" firstAttribute="top" secondItem="d3S-9C-yH6" secondAttribute="top" constant="26" id="plp-GI-dMm"/>
+                                    <constraint firstAttribute="trailing" secondItem="zrm-cM-AIi" secondAttribute="trailing" constant="20" id="tM0-7u-kD1"/>
                                     <constraint firstItem="hSn-mw-A1k" firstAttribute="leading" secondItem="d3S-9C-yH6" secondAttribute="leading" constant="26" id="tbZ-j9-cVQ"/>
+                                    <constraint firstItem="zrm-cM-AIi" firstAttribute="leading" secondItem="hSn-mw-A1k" secondAttribute="trailing" constant="20" id="wXN-r6-IDS"/>
+                                    <constraint firstItem="zrm-cM-AIi" firstAttribute="centerY" secondItem="hSn-mw-A1k" secondAttribute="centerY" id="zMx-4a-aDJ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htt-p7-0pw" userLabel="Tab Bar View">
@@ -173,6 +186,7 @@
                             <constraint firstAttribute="bottom" secondItem="htt-p7-0pw" secondAttribute="bottom" id="dlj-RF-rEk"/>
                             <constraint firstItem="TdO-pH-Qkt" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="euZ-8h-HHJ"/>
                             <constraint firstItem="htt-p7-0pw" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="fUp-UB-46d"/>
+                            <constraint firstItem="zrm-cM-AIi" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0431034" id="itr-dt-jF9"/>
                             <constraint firstItem="htt-p7-0pw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vsr-w5-UOS"/>
                         </constraints>
                     </view>
@@ -193,6 +207,7 @@
     </scenes>
     <resources>
         <image name="deposit" width="30" height="31"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="send" width="24" height="23"/>
         <image name="transactions" width="25" height="26"/>
         <systemColor name="systemBackgroundColor">
