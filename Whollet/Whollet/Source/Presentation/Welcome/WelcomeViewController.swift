@@ -12,6 +12,7 @@ final class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.viewControllers.removeAll(where: { $0 != self })
         configView()
     }
 
@@ -29,13 +30,20 @@ final class WelcomeViewController: UIViewController {
         welcomeLabel.resizeWithHeight()
         wholletLabel.resizeWithHeight()
     }
+    
+    private func toWalletPage(_ initial: WalletInitialState) {
+        let walletPageController = WalletViewController.instantiate()
+        walletPageController.initialState = initial
+        navigationController?.isNavigationBarHidden = false
+        self.navigationController?.pushViewController(walletPageController, animated: true)
+    }
 
     @IBAction func loadWalletOnClick(_ sender: UIButton) {
-        // TODO implement go Load Wallet
+        toWalletPage(.load)
     }
 
     @IBAction func createWalletOnClick(_ sender: UIButton) {
-        // TODO implement go Create Wallet
+        toWalletPage(.create)
     }
 }
 

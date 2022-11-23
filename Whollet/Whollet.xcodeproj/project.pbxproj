@@ -27,6 +27,9 @@
 		906C219B292CC3230017740A /* WelcomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906C2199292CC3230017740A /* WelcomeViewController.storyboard */; };
 		906C219C292CC3230017740A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C219A292CC3230017740A /* WelcomeViewController.swift */; };
 		906C219E292CC4A30017740A /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C219D292CC4A30017740A /* UIButton+Extension.swift */; };
+		906C21A3292CD5110017740A /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C21A0292CD5110017740A /* WalletViewController.swift */; };
+		906C21A4292CD5110017740A /* WalletViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906C21A1292CD5110017740A /* WalletViewController.storyboard */; };
+		906C21A5292CD5110017740A /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C21A2292CD5110017740A /* WalletViewModel.swift */; };
 		90E8C8D6292B6FAA00F264E3 /* SearchCoinRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8D5292B6FAA00F264E3 /* SearchCoinRequestParams.swift */; };
 		90E8C8D8292B716C00F264E3 /* SearchCoinResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8D7292B716C00F264E3 /* SearchCoinResponseModel.swift */; };
 		90E8C8DB292B76BE00F264E3 /* GetSearchCoinUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8DA292B76BE00F264E3 /* GetSearchCoinUseCase.swift */; };
@@ -117,6 +120,9 @@
 		906C2199292CC3230017740A /* WelcomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WelcomeViewController.storyboard; sourceTree = "<group>"; };
 		906C219A292CC3230017740A /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		906C219D292CC4A30017740A /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		906C21A0292CD5110017740A /* WalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		906C21A1292CD5110017740A /* WalletViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WalletViewController.storyboard; sourceTree = "<group>"; };
+		906C21A2292CD5110017740A /* WalletViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
 		90E8C8D5292B6FAA00F264E3 /* SearchCoinRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoinRequestParams.swift; sourceTree = "<group>"; };
 		90E8C8D7292B716C00F264E3 /* SearchCoinResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoinResponseModel.swift; sourceTree = "<group>"; };
 		90E8C8DA292B76BE00F264E3 /* GetSearchCoinUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSearchCoinUseCase.swift; sourceTree = "<group>"; };
@@ -242,6 +248,16 @@
 				906C219A292CC3230017740A /* WelcomeViewController.swift */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		906C219F292CD5110017740A /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				906C21A0292CD5110017740A /* WalletViewController.swift */,
+				906C21A1292CD5110017740A /* WalletViewController.storyboard */,
+				906C21A2292CD5110017740A /* WalletViewModel.swift */,
+			);
+			path = Wallet;
 			sourceTree = "<group>";
 		};
 		90E8C8D9292B758900F264E3 /* Search */ = {
@@ -450,6 +466,7 @@
 		DD9E098B2921E9AC00308D34 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				906C219F292CD5110017740A /* Wallet */,
 				906C2198292CC3230017740A /* Welcome */,
 				90E8C8D9292B758900F264E3 /* Search */,
 				DDA3DC212927508300ED7E3E /* Detail */,
@@ -687,6 +704,7 @@
 				906C218A292CAABB0017740A /* TitilliumWeb-Light.ttf in Resources */,
 				DD8DCE4D291CFD1600F6BC9F /* Assets.xcassets in Resources */,
 				906C2189292CAABB0017740A /* TitilliumWeb-SemiBold.ttf in Resources */,
+				906C21A4292CD5110017740A /* WalletViewController.storyboard in Resources */,
 				900766F0292BBF280030F020 /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -788,6 +806,7 @@
 				DD8635D329234E9F00213909 /* ChartRequestParams.swift in Sources */,
 				DD20CD3E291E312F00C8F1EE /* UIColor+Extension.swift in Sources */,
 				906C2190292CAB460017740A /* WalletRepositoryImpl.swift in Sources */,
+				906C21A3292CD5110017740A /* WalletViewController.swift in Sources */,
 				DD9E09982921E9D500308D34 /* OnboardingModel.swift in Sources */,
 				DD20CD34291E30F900C8F1EE /* APICaller.swift in Sources */,
 				DDAA0534292499F7007E61FA /* HomeViewController.swift in Sources */,
@@ -798,6 +817,7 @@
 				DDA3DC262927508300ED7E3E /* DetailViewModel.swift in Sources */,
 				DD9E09942921E9AC00308D34 /* OnboardingViewController.swift in Sources */,
 				DD8635DE2923509300213909 /* CoinsRepositoryImpl.swift in Sources */,
+				906C21A5292CD5110017740A /* WalletViewModel.swift in Sources */,
 				906C2192292CAB590017740A /* WalletRepository.swift in Sources */,
 				900766EF292BBF280030F020 /* SearchTableViewCell.swift in Sources */,
 				DD8DCE44291CFD1400F6BC9F /* AppDelegate.swift in Sources */,
