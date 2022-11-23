@@ -10,6 +10,18 @@ struct AppConstants {
         static let allTopCoins = "All Top Coins"
         static let detailCoin = "Detail Coin"
         static let searchCoin = "Search Coin"
+        static let createWallet = "Create Wallet"
+        static let createICX = "Create a ICX Wallet"
+        static let loadWallet = "Load Wallet"
+        static let copyPrimaryKey = "Copy privateKey to Clipboard and Paste"
+        static let pasteKey = "Paste Key"
+        static let loading = "Loading"
+        static let loadingWallet = "Loading a ICX Wallet"
+        static let createWalletSuccessfully = "Your wallet has been created successfully, private key save on clipboard"
+        static let goHome = "Go Home"
+        static let loadWalletSuccessfully = "Your wallet has been loaded successfully"
+        static let send = "Send"
+        static let transactionDetail = "Transaction Detail"
     }
     
     enum CGFloats {

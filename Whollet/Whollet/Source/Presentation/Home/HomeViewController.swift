@@ -16,6 +16,7 @@ final class HomeViewController: UIViewController, StoryboardSceneBased {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.viewControllers.removeAll(where: { $0 != self })
         configView()
         configTableView()
         bindViewModel()
