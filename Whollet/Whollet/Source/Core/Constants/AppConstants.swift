@@ -23,6 +23,7 @@ struct AppConstants {
         static let send = "Send"
         static let transactionDetail = "Transaction Detail"
         static let copied = "Copied"
+        static let sendNonce = "0x1"
     }
     
     enum CGFloats {
@@ -39,11 +40,13 @@ struct AppConstants {
         static let toastAlpha = 1.0
         static let toastDuration = 4.0
         static let toastDelay = 4.0
+        static let toBigInt = 1000000000000000000.0
     }
     
     enum Ints {
         static let priceStringSize = 8
         static let countLoad = 20
+        static let sendStepLimit = 1000000
     }
     
     static let onboardings: [OnboardingModel] = [

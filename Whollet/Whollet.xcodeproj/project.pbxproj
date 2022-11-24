@@ -30,6 +30,9 @@
 		906C21A3292CD5110017740A /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C21A0292CD5110017740A /* WalletViewController.swift */; };
 		906C21A4292CD5110017740A /* WalletViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906C21A1292CD5110017740A /* WalletViewController.storyboard */; };
 		906C21A5292CD5110017740A /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C21A2292CD5110017740A /* WalletViewModel.swift */; };
+		90DFCB86292F2E7B006568AD /* GetICXBalanceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DFCB85292F2E7B006568AD /* GetICXBalanceUseCase.swift */; };
+		90DFCB88292F2EB2006568AD /* SendTransactionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DFCB87292F2EB2006568AD /* SendTransactionUseCase.swift */; };
+		90DFCB8A292F2F16006568AD /* GetTransactionResultUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DFCB89292F2F16006568AD /* GetTransactionResultUseCase.swift */; };
 		90E8C8D6292B6FAA00F264E3 /* SearchCoinRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8D5292B6FAA00F264E3 /* SearchCoinRequestParams.swift */; };
 		90E8C8D8292B716C00F264E3 /* SearchCoinResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8D7292B716C00F264E3 /* SearchCoinResponseModel.swift */; };
 		90E8C8DB292B76BE00F264E3 /* GetSearchCoinUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8DA292B76BE00F264E3 /* GetSearchCoinUseCase.swift */; };
@@ -127,6 +130,9 @@
 		906C21A0292CD5110017740A /* WalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		906C21A1292CD5110017740A /* WalletViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WalletViewController.storyboard; sourceTree = "<group>"; };
 		906C21A2292CD5110017740A /* WalletViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
+		90DFCB85292F2E7B006568AD /* GetICXBalanceUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetICXBalanceUseCase.swift; sourceTree = "<group>"; };
+		90DFCB87292F2EB2006568AD /* SendTransactionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTransactionUseCase.swift; sourceTree = "<group>"; };
+		90DFCB89292F2F16006568AD /* GetTransactionResultUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTransactionResultUseCase.swift; sourceTree = "<group>"; };
 		90E8C8D5292B6FAA00F264E3 /* SearchCoinRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoinRequestParams.swift; sourceTree = "<group>"; };
 		90E8C8D7292B716C00F264E3 /* SearchCoinResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoinResponseModel.swift; sourceTree = "<group>"; };
 		90E8C8DA292B76BE00F264E3 /* GetSearchCoinUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSearchCoinUseCase.swift; sourceTree = "<group>"; };
@@ -425,6 +431,9 @@
 				90E8C8DA292B76BE00F264E3 /* GetSearchCoinUseCase.swift */,
 				900766F7292BCC790030F020 /* SaveSearchHistoryUseCase.swift */,
 				900766FB292BCDA20030F020 /* GetSearchHistoryUseCase.swift */,
+				90DFCB85292F2E7B006568AD /* GetICXBalanceUseCase.swift */,
+				90DFCB87292F2EB2006568AD /* SendTransactionUseCase.swift */,
+				90DFCB89292F2F16006568AD /* GetTransactionResultUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -812,6 +821,7 @@
 			files = (
 				DD7DFBAA292E184000BA0DEF /* UIVIewController+Extension.swift in Sources */,
 				DD8635D729234ECF00213909 /* CoinsRepository.swift in Sources */,
+				90DFCB88292F2EB2006568AD /* SendTransactionUseCase.swift in Sources */,
 				90E8C8DB292B76BE00F264E3 /* GetSearchCoinUseCase.swift in Sources */,
 				DD20CD30291E30F900C8F1EE /* AppConstants.swift in Sources */,
 				900766F3292BC9D60030F020 /* Whollet.xcdatamodeld in Sources */,
@@ -851,6 +861,7 @@
 				DDA3DC252927508300ED7E3E /* DetailViewController.swift in Sources */,
 				DDA3DC2B2927512900ED7E3E /* SpinnerFooter.swift in Sources */,
 				DD20CD3D291E312F00C8F1EE /* UIImageView+Extension.swift in Sources */,
+				90DFCB86292F2E7B006568AD /* GetICXBalanceUseCase.swift in Sources */,
 				DD20CD32291E30F900C8F1EE /* Endpoints.swift in Sources */,
 				DDAA054729249B56007E61FA /* CoinTableViewCell.swift in Sources */,
 				900766FC292BCDA20030F020 /* GetSearchHistoryUseCase.swift in Sources */,
@@ -859,6 +870,7 @@
 				DD8635DB29234F0000213909 /* CoinServices.swift in Sources */,
 				901730A1292C8840003D9CDD /* SearchHistoryRepository.swift in Sources */,
 				90E8C8D8292B716C00F264E3 /* SearchCoinResponseModel.swift in Sources */,
+				90DFCB8A292F2F16006568AD /* GetTransactionResultUseCase.swift in Sources */,
 				DD8635E1292350CC00213909 /* GetCoinsUseCase.swift in Sources */,
 				DD20CD3F291E312F00C8F1EE /* UILabel+Extension.swift in Sources */,
 				DD20CD33291E30F900C8F1EE /* APIError.swift in Sources */,
