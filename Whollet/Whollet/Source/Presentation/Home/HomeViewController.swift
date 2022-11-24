@@ -10,7 +10,6 @@ final class HomeViewController: UIViewController, StoryboardSceneBased {
     @IBOutlet private weak var icxPriceText: UILabel!
     @IBOutlet private weak var depositButton: UIButton!
     @IBOutlet private weak var tableView: UITableView!
-    
     private var coins: [CoinModel] = []
     private var viewModel = HomeViewModel()
 
@@ -96,14 +95,25 @@ final class HomeViewController: UIViewController, StoryboardSceneBased {
         navigationController?.navigationBar.backgroundColor = UIColor.MyTheme.primary
     }
     
-    @IBAction func seeAllTopCoinsOnTap(_ sender: UIButton) {
+    @IBAction private func seeAllTopCoinsOnTap(_ sender: UIButton) {
         let coinsPageController = CoinsViewController.instantiate()
         self.navigationController?.pushViewController(coinsPageController, animated: true)
     }
     
-    
-    @IBAction func searchButtonOnClick(_ sender: UIButton) {
+    @IBAction private func searchButtonOnClick(_ sender: UIButton) {
         self.navigationController?.pushViewController(SearchViewController.instantiate(), animated: true)
+    }
+    
+    @IBAction private func depositButtonOnClick(_ sender: UIButton) {
+        let depositPageController = DepositViewController.instantiate()
+        if let sheet = depositPageController.sheetPresentationController {
+            sheet.detents = [.large()]
+            sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+            sheet.prefersGrabberVisible = true
+            sheet.preferredCornerRadius = AppConstants.CGFloats.defaultRadius
+            sheet.largestUndimmedDetentIdentifier = .medium
+        }
+        self.present(depositPageController, animated: true, completion: nil)
     }
 }
 

@@ -15,5 +15,6 @@ extension UIColor {
         static var primaryBackground: UIColor { return UIColor(argb: 0xFFEDF1F9) }
         static var priceUp: UIColor { return UIColor(argb: 0xFF75BF72) }
         static var priceDown: UIColor { return UIColor(argb: 0xFFDF5060) }
+        static var toastBackground: UIColor { return UIColor.black.withAlphaComponent(0.6) }
     }
 }

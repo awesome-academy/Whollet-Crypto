@@ -26,7 +26,9 @@ final class WalletViewController: UIViewController {
                 switch state {
                 case .inProgress:
                      DispatchQueue.main.async {
-                        self.descriptionLabel.text = self.initialState == .create ? AppConstants.Strings.createICX : AppConstants.Strings.loadWallet
+                        self.descriptionLabel.text = self.initialState == .create
+                            ? AppConstants.Strings.createICX
+                            : AppConstants.Strings.loadWallet
                         self.nextButton.setTitle(AppConstants.Strings.loading, for: .normal)
                         self.nextButton.backgroundColor = UIColor.MyTheme.primary.withAlphaComponent(0.5)
                     }
@@ -36,6 +38,11 @@ final class WalletViewController: UIViewController {
                         self.descriptionLabel.text = isCreate
                             ? AppConstants.Strings.createWalletSuccessfully
                             : AppConstants.Strings.loadWalletSuccessfully
+                        self.showToast(
+                            message: isCreate
+                              ? AppConstants.Strings.createWalletSuccessfully
+                              : AppConstants.Strings.loadWalletSuccessfully,
+                            font: .systemFont(ofSize: 15 * UIScreen.resizeHeight))
                         self.nextButton.setTitle(AppConstants.Strings.goHome, for: .normal)
                         self.nextButton.backgroundColor = UIColor.MyTheme.primary
                     }
@@ -47,8 +54,8 @@ final class WalletViewController: UIViewController {
     }
     
     private func configView() {
-        nextButton.fullCornerRadiusWithHeight()
         nextButton.resizeTextWithHeight()
+        nextButton.fullCornerRadius()
         guard let initialState = initialState else {
             return
         }

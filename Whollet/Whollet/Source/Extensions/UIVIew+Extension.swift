@@ -18,4 +18,9 @@ extension UIView {
     func fullCornerRadius() {
         layer.cornerRadius = frame.height / 2
     }
+    
+    func topRadius() {
+        layer.cornerRadius = AppConstants.CGFloats.defaultRadius
+        layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+    }
 }

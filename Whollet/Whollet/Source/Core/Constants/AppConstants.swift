@@ -22,6 +22,7 @@ struct AppConstants {
         static let loadWalletSuccessfully = "Your wallet has been loaded successfully"
         static let send = "Send"
         static let transactionDetail = "Transaction Detail"
+        static let copied = "Copied"
     }
     
     enum CGFloats {
@@ -30,6 +31,14 @@ struct AppConstants {
         static let appBarTitleSize = 26.0
         static let depositButtonBorder = 3.0
         static let cellRadius = 10.0
+        static let toastHeight = 35.0
+        static let toashWidth = 300.0
+        static let toashLeading = 37.5
+        static let toastBottom = 200.0
+        static let toastWidth = 0.8
+        static let toastAlpha = 1.0
+        static let toastDuration = 4.0
+        static let toastDelay = 4.0
     }
     
     enum Ints {
