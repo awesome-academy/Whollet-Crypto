@@ -48,6 +48,10 @@
 		DD20CD3F291E312F00C8F1EE /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD3A291E312F00C8F1EE /* UILabel+Extension.swift */; };
 		DD20CD40291E312F00C8F1EE /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD3B291E312F00C8F1EE /* UIVIew+Extension.swift */; };
 		DD20CD41291E312F00C8F1EE /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20CD3C291E312F00C8F1EE /* UIScreen+Extension.swift */; };
+		DD7DFBA4292E163300BA0DEF /* DepositViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DFBA3292E163300BA0DEF /* DepositViewController.swift */; };
+		DD7DFBA6292E165600BA0DEF /* DepositViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7DFBA5292E165600BA0DEF /* DepositViewController.storyboard */; };
+		DD7DFBA8292E16AC00BA0DEF /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DFBA7292E16AC00BA0DEF /* UIApplication+Extension.swift */; };
+		DD7DFBAA292E184000BA0DEF /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DFBA9292E183F00BA0DEF /* UIVIewController+Extension.swift */; };
 		DD8635CF29234E5F00213909 /* ChartResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8635CE29234E5F00213909 /* ChartResponseModel.swift */; };
 		DD8635D129234E7200213909 /* CoinsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8635D029234E7200213909 /* CoinsResponseModel.swift */; };
 		DD8635D329234E9F00213909 /* ChartRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8635D229234E9F00213909 /* ChartRequestParams.swift */; };
@@ -141,6 +145,10 @@
 		DD20CD3A291E312F00C8F1EE /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		DD20CD3B291E312F00C8F1EE /* UIVIew+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
 		DD20CD3C291E312F00C8F1EE /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		DD7DFBA3292E163300BA0DEF /* DepositViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositViewController.swift; sourceTree = "<group>"; };
+		DD7DFBA5292E165600BA0DEF /* DepositViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DepositViewController.storyboard; sourceTree = "<group>"; };
+		DD7DFBA7292E16AC00BA0DEF /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		DD7DFBA9292E183F00BA0DEF /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
 		DD8635CE29234E5F00213909 /* ChartResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartResponseModel.swift; sourceTree = "<group>"; };
 		DD8635D029234E7200213909 /* CoinsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsResponseModel.swift; sourceTree = "<group>"; };
 		DD8635D229234E9F00213909 /* ChartRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartRequestParams.swift; sourceTree = "<group>"; };
@@ -346,8 +354,19 @@
 				DD20CD3C291E312F00C8F1EE /* UIScreen+Extension.swift */,
 				DDAA054829249BC1007E61FA /* String+Extension.swift */,
 				906C219D292CC4A30017740A /* UIButton+Extension.swift */,
+				DD7DFBA7292E16AC00BA0DEF /* UIApplication+Extension.swift */,
+				DD7DFBA9292E183F00BA0DEF /* UIVIewController+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DD7DFBA2292E15F500BA0DEF /* Deposit */ = {
+			isa = PBXGroup;
+			children = (
+				DD7DFBA3292E163300BA0DEF /* DepositViewController.swift */,
+				DD7DFBA5292E165600BA0DEF /* DepositViewController.storyboard */,
+			);
+			path = Deposit;
 			sourceTree = "<group>";
 		};
 		DD8635D429234EBE00213909 /* Domain */ = {
@@ -466,6 +485,7 @@
 		DD9E098B2921E9AC00308D34 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DD7DFBA2292E15F500BA0DEF /* Deposit */,
 				906C219F292CD5110017740A /* Wallet */,
 				906C2198292CC3230017740A /* Welcome */,
 				90E8C8D9292B758900F264E3 /* Search */,
@@ -691,6 +711,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA3DC2C2927512900ED7E3E /* SpinnerFooter.xib in Resources */,
+				DD7DFBA6292E165600BA0DEF /* DepositViewController.storyboard in Resources */,
 				DDA3DC272927508300ED7E3E /* DetailViewController.storyboard in Resources */,
 				DDA3DC202927507D00ED7E3E /* CoinsViewController.storyboard in Resources */,
 				DD9E09922921E9AC00308D34 /* LaunchScreen.storyboard in Resources */,
@@ -789,6 +810,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7DFBAA292E184000BA0DEF /* UIVIewController+Extension.swift in Sources */,
 				DD8635D729234ECF00213909 /* CoinsRepository.swift in Sources */,
 				90E8C8DB292B76BE00F264E3 /* GetSearchCoinUseCase.swift in Sources */,
 				DD20CD30291E30F900C8F1EE /* AppConstants.swift in Sources */,
@@ -796,6 +818,8 @@
 				906C218D292CAB110017740A /* LoadWalletUseCase.swift in Sources */,
 				DD8635D129234E7200213909 /* CoinsResponseModel.swift in Sources */,
 				90E8C8E2292B996800F264E3 /* SearchViewController.swift in Sources */,
+				DD7DFBA4292E163300BA0DEF /* DepositViewController.swift in Sources */,
+				DD7DFBA8292E16AC00BA0DEF /* UIApplication+Extension.swift in Sources */,
 				90E8C8DE292B992400F264E3 /* SearchViewModel.swift in Sources */,
 				900766F6292BCB040030F020 /* LocalDataMamager.swift in Sources */,
 				DDAA0532292499E2007E61FA /* HomeViewModel.swift in Sources */,
