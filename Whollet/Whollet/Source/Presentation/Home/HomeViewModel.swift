@@ -3,9 +3,9 @@ import Foundation
 final class HomeViewModel: NSObject {
     private var getCoinsUseCase: GetCoinsUseCase!
     
-    private(set) var bsDataCoins: BehaviorSubject<[CoinModel]?> = BehaviorSubject(nil)
+    private(set) var bsDataCoins: BehaviorSubject<[CoinModel]> = BehaviorSubject(nil)
     
-    private(set) var bsICXCoins: BehaviorSubject<CoinModel?> = BehaviorSubject(nil)
+    private(set) var bsICXCoins: BehaviorSubject<CoinModel> = BehaviorSubject(nil)
     
     override init() {
         super.init()

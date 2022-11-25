@@ -24,6 +24,8 @@ struct AppConstants {
         static let transactionDetail = "Transaction Detail"
         static let copied = "Copied"
         static let sendNonce = "0x1"
+        static let notSend = "Not send"
+        static let notAddPoint = "Not add point"
     }
     
     enum CGFloats {
