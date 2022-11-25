@@ -14,7 +14,7 @@ final class LocalDataManager: NSObject {
     }()
     
     func deleteSearch(_ search: SearchCoinModel) {
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "SearchHistory")
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: Entities.search)
         fetchRequest.includesPropertyValues = false
         do {
             let items = try context.fetch(fetchRequest)
@@ -33,7 +33,7 @@ final class LocalDataManager: NSObject {
     }
     
     func saveSearch(_ search: SearchCoinModel) {
-        let entity = NSEntityDescription.entity(forEntityName: "SearchHistory", in: context)!
+        let entity = NSEntityDescription.entity(forEntityName: Entities.search, in: context)!
         let detail = NSManagedObject(entity: entity, insertInto: context)
         detail.setValue(search.id, forKey: "id")
         detail.setValue(search.symbol, forKey: "symbol")
@@ -49,7 +49,7 @@ final class LocalDataManager: NSObject {
     }
     
     func getSearchHistory(completion: @escaping ([SearchCoinModel], Error?) -> (Void)) {
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "SearchHistory")
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: Entities.search)
         fetchRequest.includesPropertyValues = false
         do {
             let items = try context.fetch(fetchRequest)
@@ -62,6 +62,39 @@ final class LocalDataManager: NSObject {
                 completion([], error)
             }
             return
+        }
+    }
+    
+    func saveTransactionHistory(_ transaction: TransactionDetail) {
+        let entity = NSEntityDescription.entity(forEntityName: Entities.transaction, in: context)!
+        let detail = NSManagedObject(entity: entity, insertInto: context)
+        detail.setValue(transaction.from, forKey: "from")
+        detail.setValue(transaction.to, forKey: "to")
+        detail.setValue(transaction.totalAmount, forKey: "total_amount")
+        detail.setValue(transaction.status, forKey: "status")
+        detail.setValue(transaction.totalAmountUSD, forKey: "total_amount_usd")
+        detail.setValue(transaction.time, forKey: "time")
+        detail.setValue(transaction.id, forKey: "id")
+        do {
+            try context.save()
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
+    func getAllTransactionHistory(completion: @escaping ([TransactionDetail]?, Error?) -> (Void)) {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: Entities.transaction)
+        fetchRequest.includesPropertyValues = false
+        do {
+            let items = try context.fetch(fetchRequest)
+            let list = items.enumerated().map { index, item -> TransactionDetail in
+                return TransactionDetail(item: item)
+            }
+            completion(list, nil)
+        } catch let error as NSError {
+            DispatchQueue.main.async {
+                completion(nil, error)
+            }
         }
     }
 }
