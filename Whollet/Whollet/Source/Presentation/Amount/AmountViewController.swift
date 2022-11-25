@@ -92,7 +92,7 @@ final class AmountViewController: UIViewController {
     @IBAction func nextButtonOnClick(_ sender: UIButton) {
         if let icx = Double(number), icx > 0, icx < balance {
             self.viewModel.saveICXValue(icx)
-            // TODO: navigator to address input page
+            self.navigationController?.pushViewController(AddressViewController.instantiate(), animated: true)
         } else {
             showToast(message: AppConstants.Strings.notSend, font: .systemFont(ofSize: 15 * UIScreen.resizeHeight))
         }
