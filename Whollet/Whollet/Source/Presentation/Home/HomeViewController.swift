@@ -35,7 +35,7 @@ final class HomeViewController: UIViewController, StoryboardSceneBased {
         viewModel.bsDataCoins.bind { [weak self] value in
             guard let self = self else { return }
             if let coins = value {
-                self.coins = coins ?? []
+                self.coins = coins
                 DispatchQueue.main.async {
                     self.tableView.tableFooterView = nil
                     self.tableView.reloadData()
@@ -51,14 +51,11 @@ final class HomeViewController: UIViewController, StoryboardSceneBased {
     private func bindICXCoins() {
         viewModel.bsICXCoins.bind { [weak self] value in
             guard let self = self else { return }
-            if let icxCoin = value {
-                let price = icxCoin?.currentPrice?.description ?? ""
-                DispatchQueue.main.async {
-                    self.icxPriceText.text = "$ " + String(
-                        text: price,
-                        size: AppConstants.Ints.priceStringSize)
-                }
-                
+            let price = value?.currentPrice?.description ?? ""
+            DispatchQueue.main.async {
+                self.icxPriceText.text = "$ " + String(
+                    text: price,
+                    size: AppConstants.Ints.priceStringSize)
             }
         }
     }
@@ -115,6 +112,13 @@ final class HomeViewController: UIViewController, StoryboardSceneBased {
         }
         self.present(depositPageController, animated: true, completion: nil)
     }
+    
+    @IBAction private func sendButtonOnClick(_ sender: UIButton) {
+        let amountPageController = AmountViewController.instantiate()
+        amountPageController.icxPrice = viewModel.bsICXCoins.value?.currentPrice
+        self.navigationController?.pushViewController(amountPageController, animated: true)
+    }
+    
 }
 
 extension HomeViewController: UITableViewDataSource {
