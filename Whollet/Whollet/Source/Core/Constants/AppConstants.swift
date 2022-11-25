@@ -26,6 +26,9 @@ struct AppConstants {
         static let sendNonce = "0x1"
         static let notSend = "Not send"
         static let notAddPoint = "Not add point"
+        static let failedGetCamera = "Failed to get the camera device"
+        static let iconShow = "show"
+        static let iconHide = "hide"
     }
     
     enum CGFloats {

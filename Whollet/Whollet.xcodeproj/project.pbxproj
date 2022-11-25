@@ -36,6 +36,10 @@
 		90C1D44529306FCE00AD2E0B /* SaveTransactionHistoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C1D44429306FCE00AD2E0B /* SaveTransactionHistoryUseCase.swift */; };
 		90C1D4472930700C00AD2E0B /* GetAllTransactionHistoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C1D4462930700C00AD2E0B /* GetAllTransactionHistoryUseCase.swift */; };
 		90C1D44A2930709A00AD2E0B /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C1D4492930709A00AD2E0B /* Entities.swift */; };
+		90C1D45B2930A8FE00AD2E0B /* ScanQRViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C1D4552930A8FE00AD2E0B /* ScanQRViewController.storyboard */; };
+		90C1D45C2930A8FE00AD2E0B /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C1D4562930A8FE00AD2E0B /* ScanQRViewController.swift */; };
+		90C1D45D2930A8FE00AD2E0B /* AddressViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C1D4582930A8FE00AD2E0B /* AddressViewController.storyboard */; };
+		90C1D45F2930A8FE00AD2E0B /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C1D45A2930A8FE00AD2E0B /* AddressViewController.swift */; };
 		90DFCB86292F2E7B006568AD /* GetICXBalanceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DFCB85292F2E7B006568AD /* GetICXBalanceUseCase.swift */; };
 		90DFCB88292F2EB2006568AD /* SendTransactionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DFCB87292F2EB2006568AD /* SendTransactionUseCase.swift */; };
 		90DFCB8A292F2F16006568AD /* GetTransactionResultUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DFCB89292F2F16006568AD /* GetTransactionResultUseCase.swift */; };
@@ -146,6 +150,10 @@
 		90C1D44429306FCE00AD2E0B /* SaveTransactionHistoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTransactionHistoryUseCase.swift; sourceTree = "<group>"; };
 		90C1D4462930700C00AD2E0B /* GetAllTransactionHistoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllTransactionHistoryUseCase.swift; sourceTree = "<group>"; };
 		90C1D4492930709A00AD2E0B /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
+		90C1D4552930A8FE00AD2E0B /* ScanQRViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScanQRViewController.storyboard; sourceTree = "<group>"; };
+		90C1D4562930A8FE00AD2E0B /* ScanQRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
+		90C1D4582930A8FE00AD2E0B /* AddressViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddressViewController.storyboard; sourceTree = "<group>"; };
+		90C1D45A2930A8FE00AD2E0B /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
 		90DFCB85292F2E7B006568AD /* GetICXBalanceUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetICXBalanceUseCase.swift; sourceTree = "<group>"; };
 		90DFCB87292F2EB2006568AD /* SendTransactionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTransactionUseCase.swift; sourceTree = "<group>"; };
 		90DFCB89292F2F16006568AD /* GetTransactionResultUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTransactionResultUseCase.swift; sourceTree = "<group>"; };
@@ -308,6 +316,24 @@
 				90C1D4492930709A00AD2E0B /* Entities.swift */,
 			);
 			path = Local;
+			sourceTree = "<group>";
+		};
+		90C1D4542930A8FE00AD2E0B /* ScanQR */ = {
+			isa = PBXGroup;
+			children = (
+				90C1D4552930A8FE00AD2E0B /* ScanQRViewController.storyboard */,
+				90C1D4562930A8FE00AD2E0B /* ScanQRViewController.swift */,
+			);
+			path = ScanQR;
+			sourceTree = "<group>";
+		};
+		90C1D4572930A8FE00AD2E0B /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				90C1D4582930A8FE00AD2E0B /* AddressViewController.storyboard */,
+				90C1D45A2930A8FE00AD2E0B /* AddressViewController.swift */,
+			);
+			path = Address;
 			sourceTree = "<group>";
 		};
 		90DFCB92292F606D006568AD /* Amount */ = {
@@ -546,6 +572,8 @@
 		DD9E098B2921E9AC00308D34 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				90C1D4572930A8FE00AD2E0B /* Address */,
+				90C1D4542930A8FE00AD2E0B /* ScanQR */,
 				90DFCB92292F606D006568AD /* Amount */,
 				DD7DFBA2292E15F500BA0DEF /* Deposit */,
 				906C219F292CD5110017740A /* Wallet */,
@@ -779,7 +807,9 @@
 				90DFCB97292F609E006568AD /* AmountViewController.storyboard in Resources */,
 				DDA3DC202927507D00ED7E3E /* CoinsViewController.storyboard in Resources */,
 				DD9E09922921E9AC00308D34 /* LaunchScreen.storyboard in Resources */,
+				90C1D45B2930A8FE00AD2E0B /* ScanQRViewController.storyboard in Resources */,
 				DDAA053929249A29007E61FA /* HomeViewController.storyboard in Resources */,
+				90C1D45D2930A8FE00AD2E0B /* AddressViewController.storyboard in Resources */,
 				906C219B292CC3230017740A /* WelcomeViewController.storyboard in Resources */,
 				90E8C8E4292B9AAC00F264E3 /* SearchViewController.storyboard in Resources */,
 				906C2188292CAABB0017740A /* TitilliumWeb-Regular.ttf in Resources */,
@@ -881,6 +911,7 @@
 				DD20CD30291E30F900C8F1EE /* AppConstants.swift in Sources */,
 				900766F3292BC9D60030F020 /* Whollet.xcdatamodeld in Sources */,
 				906C218D292CAB110017740A /* LoadWalletUseCase.swift in Sources */,
+				90C1D45F2930A8FE00AD2E0B /* AddressViewController.swift in Sources */,
 				DD8635D129234E7200213909 /* CoinsResponseModel.swift in Sources */,
 				90E8C8E2292B996800F264E3 /* SearchViewController.swift in Sources */,
 				DD7DFBA4292E163300BA0DEF /* DepositViewController.swift in Sources */,
@@ -888,6 +919,7 @@
 				90C1D44129306F4A00AD2E0B /* TransactionHistoryRepositoryImpl.swift in Sources */,
 				90E8C8DE292B992400F264E3 /* SearchViewModel.swift in Sources */,
 				900766F6292BCB040030F020 /* LocalDataMamager.swift in Sources */,
+				90C1D45C2930A8FE00AD2E0B /* ScanQRViewController.swift in Sources */,
 				DDAA0532292499E2007E61FA /* HomeViewModel.swift in Sources */,
 				DD8635E4292350E700213909 /* GetChartUseCase.swift in Sources */,
 				90DFCB98292F609E006568AD /* AmountViewModel.swift in Sources */,
@@ -1036,7 +1068,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1090,7 +1122,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1116,7 +1148,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = OnboardingScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1146,7 +1178,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = OnboardingScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
