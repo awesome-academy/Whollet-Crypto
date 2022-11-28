@@ -47,6 +47,18 @@
 		90DFCB97292F609E006568AD /* AmountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90DFCB94292F609E006568AD /* AmountViewController.storyboard */; };
 		90DFCB98292F609E006568AD /* AmountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DFCB95292F609E006568AD /* AmountViewModel.swift */; };
 		90DFCB9A292F622E006568AD /* TransactionInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DFCB99292F622E006568AD /* TransactionInputModel.swift */; };
+		90E3A23E293110A900553B66 /* ConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3A23B293110A900553B66 /* ConfirmationViewModel.swift */; };
+		90E3A23F293110A900553B66 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3A23C293110A900553B66 /* ConfirmationViewController.swift */; };
+		90E3A240293110A900553B66 /* ConfirmationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E3A23D293110A900553B66 /* ConfirmationViewController.storyboard */; };
+		90E3A2492931149300553B66 /* AllTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3A2422931149300553B66 /* AllTransactionViewModel.swift */; };
+		90E3A24A2931149300553B66 /* AllTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3A2432931149300553B66 /* AllTransactionViewController.swift */; };
+		90E3A24B2931149300553B66 /* AllTransactionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E3A2442931149300553B66 /* AllTransactionViewController.storyboard */; };
+		90E3A24C2931149300553B66 /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3A2462931149300553B66 /* TransactionDetailViewController.swift */; };
+		90E3A24D2931149300553B66 /* TransactionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3A2472931149300553B66 /* TransactionDetailViewModel.swift */; };
+		90E3A24E2931149300553B66 /* TransactionDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E3A2482931149300553B66 /* TransactionDetailViewController.storyboard */; };
+		90E3A2502931162700553B66 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3A24F2931162700553B66 /* Date+Extension.swift */; };
+		90E3A254293117C600553B66 /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E3A252293117C600553B66 /* TransactionTableViewCell.xib */; };
+		90E3A255293117C600553B66 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3A253293117C600553B66 /* TransactionTableViewCell.swift */; };
 		90E8C8D6292B6FAA00F264E3 /* SearchCoinRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8D5292B6FAA00F264E3 /* SearchCoinRequestParams.swift */; };
 		90E8C8D8292B716C00F264E3 /* SearchCoinResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8D7292B716C00F264E3 /* SearchCoinResponseModel.swift */; };
 		90E8C8DB292B76BE00F264E3 /* GetSearchCoinUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C8DA292B76BE00F264E3 /* GetSearchCoinUseCase.swift */; };
@@ -161,6 +173,18 @@
 		90DFCB94292F609E006568AD /* AmountViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AmountViewController.storyboard; sourceTree = "<group>"; };
 		90DFCB95292F609E006568AD /* AmountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountViewModel.swift; sourceTree = "<group>"; };
 		90DFCB99292F622E006568AD /* TransactionInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInputModel.swift; sourceTree = "<group>"; };
+		90E3A23B293110A900553B66 /* ConfirmationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewModel.swift; sourceTree = "<group>"; };
+		90E3A23C293110A900553B66 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		90E3A23D293110A900553B66 /* ConfirmationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConfirmationViewController.storyboard; sourceTree = "<group>"; };
+		90E3A2422931149300553B66 /* AllTransactionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllTransactionViewModel.swift; sourceTree = "<group>"; };
+		90E3A2432931149300553B66 /* AllTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllTransactionViewController.swift; sourceTree = "<group>"; };
+		90E3A2442931149300553B66 /* AllTransactionViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AllTransactionViewController.storyboard; sourceTree = "<group>"; };
+		90E3A2462931149300553B66 /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
+		90E3A2472931149300553B66 /* TransactionDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewModel.swift; sourceTree = "<group>"; };
+		90E3A2482931149300553B66 /* TransactionDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TransactionDetailViewController.storyboard; sourceTree = "<group>"; };
+		90E3A24F2931162700553B66 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		90E3A252293117C600553B66 /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
+		90E3A253293117C600553B66 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		90E8C8D5292B6FAA00F264E3 /* SearchCoinRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoinRequestParams.swift; sourceTree = "<group>"; };
 		90E8C8D7292B716C00F264E3 /* SearchCoinResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoinResponseModel.swift; sourceTree = "<group>"; };
 		90E8C8DA292B76BE00F264E3 /* GetSearchCoinUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSearchCoinUseCase.swift; sourceTree = "<group>"; };
@@ -346,6 +370,45 @@
 			path = Amount;
 			sourceTree = "<group>";
 		};
+		90E3A23A293110A900553B66 /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				90E3A23B293110A900553B66 /* ConfirmationViewModel.swift */,
+				90E3A23C293110A900553B66 /* ConfirmationViewController.swift */,
+				90E3A23D293110A900553B66 /* ConfirmationViewController.storyboard */,
+			);
+			path = Confirmation;
+			sourceTree = "<group>";
+		};
+		90E3A2412931149300553B66 /* AllTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				90E3A2422931149300553B66 /* AllTransactionViewModel.swift */,
+				90E3A2432931149300553B66 /* AllTransactionViewController.swift */,
+				90E3A2442931149300553B66 /* AllTransactionViewController.storyboard */,
+			);
+			path = AllTransaction;
+			sourceTree = "<group>";
+		};
+		90E3A2452931149300553B66 /* TransactionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				90E3A2462931149300553B66 /* TransactionDetailViewController.swift */,
+				90E3A2472931149300553B66 /* TransactionDetailViewModel.swift */,
+				90E3A2482931149300553B66 /* TransactionDetailViewController.storyboard */,
+			);
+			path = TransactionDetail;
+			sourceTree = "<group>";
+		};
+		90E3A251293117C600553B66 /* TransactionCell */ = {
+			isa = PBXGroup;
+			children = (
+				90E3A252293117C600553B66 /* TransactionTableViewCell.xib */,
+				90E3A253293117C600553B66 /* TransactionTableViewCell.swift */,
+			);
+			path = TransactionCell;
+			sourceTree = "<group>";
+		};
 		90E8C8D9292B758900F264E3 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +498,7 @@
 				906C219D292CC4A30017740A /* UIButton+Extension.swift */,
 				DD7DFBA7292E16AC00BA0DEF /* UIApplication+Extension.swift */,
 				DD7DFBA9292E183F00BA0DEF /* UIVIewController+Extension.swift */,
+				90E3A24F2931162700553B66 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -572,6 +636,9 @@
 		DD9E098B2921E9AC00308D34 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				90E3A2412931149300553B66 /* AllTransaction */,
+				90E3A2452931149300553B66 /* TransactionDetail */,
+				90E3A23A293110A900553B66 /* Confirmation */,
 				90C1D4572930A8FE00AD2E0B /* Address */,
 				90C1D4542930A8FE00AD2E0B /* ScanQR */,
 				90DFCB92292F606D006568AD /* Amount */,
@@ -670,6 +737,7 @@
 		DDAA054229249B1F007E61FA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				90E3A251293117C600553B66 /* TransactionCell */,
 				900766EB292BBF030030F020 /* SearchCell */,
 				DDA3DC282927512900ED7E3E /* SpinnerFooter */,
 				DDAA054529249B38007E61FA /* CoinCell */,
@@ -806,10 +874,13 @@
 				DDA3DC272927508300ED7E3E /* DetailViewController.storyboard in Resources */,
 				90DFCB97292F609E006568AD /* AmountViewController.storyboard in Resources */,
 				DDA3DC202927507D00ED7E3E /* CoinsViewController.storyboard in Resources */,
+				90E3A24E2931149300553B66 /* TransactionDetailViewController.storyboard in Resources */,
+				90E3A240293110A900553B66 /* ConfirmationViewController.storyboard in Resources */,
 				DD9E09922921E9AC00308D34 /* LaunchScreen.storyboard in Resources */,
 				90C1D45B2930A8FE00AD2E0B /* ScanQRViewController.storyboard in Resources */,
 				DDAA053929249A29007E61FA /* HomeViewController.storyboard in Resources */,
 				90C1D45D2930A8FE00AD2E0B /* AddressViewController.storyboard in Resources */,
+				90E3A24B2931149300553B66 /* AllTransactionViewController.storyboard in Resources */,
 				906C219B292CC3230017740A /* WelcomeViewController.storyboard in Resources */,
 				90E8C8E4292B9AAC00F264E3 /* SearchViewController.storyboard in Resources */,
 				906C2188292CAABB0017740A /* TitilliumWeb-Regular.ttf in Resources */,
@@ -820,6 +891,7 @@
 				DD8DCE4D291CFD1600F6BC9F /* Assets.xcassets in Resources */,
 				906C2189292CAABB0017740A /* TitilliumWeb-SemiBold.ttf in Resources */,
 				906C21A4292CD5110017740A /* WalletViewController.storyboard in Resources */,
+				90E3A254293117C600553B66 /* TransactionTableViewCell.xib in Resources */,
 				900766F0292BBF280030F020 /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -916,10 +988,12 @@
 				90E8C8E2292B996800F264E3 /* SearchViewController.swift in Sources */,
 				DD7DFBA4292E163300BA0DEF /* DepositViewController.swift in Sources */,
 				DD7DFBA8292E16AC00BA0DEF /* UIApplication+Extension.swift in Sources */,
+				90E3A24D2931149300553B66 /* TransactionDetailViewModel.swift in Sources */,
 				90C1D44129306F4A00AD2E0B /* TransactionHistoryRepositoryImpl.swift in Sources */,
 				90E8C8DE292B992400F264E3 /* SearchViewModel.swift in Sources */,
 				900766F6292BCB040030F020 /* LocalDataMamager.swift in Sources */,
 				90C1D45C2930A8FE00AD2E0B /* ScanQRViewController.swift in Sources */,
+				90E3A24C2931149300553B66 /* TransactionDetailViewController.swift in Sources */,
 				DDAA0532292499E2007E61FA /* HomeViewModel.swift in Sources */,
 				DD8635E4292350E700213909 /* GetChartUseCase.swift in Sources */,
 				90DFCB98292F609E006568AD /* AmountViewModel.swift in Sources */,
@@ -934,6 +1008,7 @@
 				DD9E09982921E9D500308D34 /* OnboardingModel.swift in Sources */,
 				DD20CD34291E30F900C8F1EE /* APICaller.swift in Sources */,
 				DDAA0534292499F7007E61FA /* HomeViewController.swift in Sources */,
+				90E3A23F293110A900553B66 /* ConfirmationViewController.swift in Sources */,
 				90C1D44529306FCE00AD2E0B /* SaveTransactionHistoryUseCase.swift in Sources */,
 				90DFCB9A292F622E006568AD /* TransactionInputModel.swift in Sources */,
 				906C219E292CC4A30017740A /* UIButton+Extension.swift in Sources */,
@@ -948,23 +1023,28 @@
 				900766EF292BBF280030F020 /* SearchTableViewCell.swift in Sources */,
 				DD8DCE44291CFD1400F6BC9F /* AppDelegate.swift in Sources */,
 				DD20CD36291E30F900C8F1EE /* CoinsRequestParams.swift in Sources */,
+				90E3A2492931149300553B66 /* AllTransactionViewModel.swift in Sources */,
 				90E8C8D6292B6FAA00F264E3 /* SearchCoinRequestParams.swift in Sources */,
 				906C219C292CC3230017740A /* WelcomeViewController.swift in Sources */,
 				DDA3DC252927508300ED7E3E /* DetailViewController.swift in Sources */,
 				DDA3DC2B2927512900ED7E3E /* SpinnerFooter.swift in Sources */,
 				DD20CD3D291E312F00C8F1EE /* UIImageView+Extension.swift in Sources */,
+				90E3A24A2931149300553B66 /* AllTransactionViewController.swift in Sources */,
 				90DFCB86292F2E7B006568AD /* GetICXBalanceUseCase.swift in Sources */,
 				DD20CD32291E30F900C8F1EE /* Endpoints.swift in Sources */,
 				90C1D4472930700C00AD2E0B /* GetAllTransactionHistoryUseCase.swift in Sources */,
 				DDAA054729249B56007E61FA /* CoinTableViewCell.swift in Sources */,
+				90E3A255293117C600553B66 /* TransactionTableViewCell.swift in Sources */,
 				900766FC292BCDA20030F020 /* GetSearchHistoryUseCase.swift in Sources */,
 				DD20CD41291E312F00C8F1EE /* UIScreen+Extension.swift in Sources */,
 				900766FA292BCCC30030F020 /* SearchHistoryRepositoryImpl.swift in Sources */,
 				90C1D44A2930709A00AD2E0B /* Entities.swift in Sources */,
 				DD8635DB29234F0000213909 /* CoinServices.swift in Sources */,
 				901730A1292C8840003D9CDD /* SearchHistoryRepository.swift in Sources */,
+				90E3A23E293110A900553B66 /* ConfirmationViewModel.swift in Sources */,
 				90E8C8D8292B716C00F264E3 /* SearchCoinResponseModel.swift in Sources */,
 				90DFCB8A292F2F16006568AD /* GetTransactionResultUseCase.swift in Sources */,
+				90E3A2502931162700553B66 /* Date+Extension.swift in Sources */,
 				DD8635E1292350CC00213909 /* GetCoinsUseCase.swift in Sources */,
 				90C1D43F29306E2C00AD2E0B /* TransactionDetail.swift in Sources */,
 				DD20CD3F291E312F00C8F1EE /* UILabel+Extension.swift in Sources */,
@@ -1068,7 +1148,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1122,7 +1202,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1148,7 +1228,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = OnboardingScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1178,7 +1258,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = OnboardingScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -36,7 +36,7 @@ final class AddressViewController: UIViewController {
             height.constant *= UIScreen.resizeHeight
         }
         bottomView.topRadius()
-        sendICXButton.fullCornerRadiusWithHeight()
+        sendICXButton.fullCornerRadius()
         sendICXButton.resizeTextWithHeight()
         NotificationCenter.default.addObserver(
             self,
@@ -97,7 +97,7 @@ final class AddressViewController: UIViewController {
     @IBAction func sendICXTap(_ sender: UIButton) {
         if let address =  self.addressTextField.text, address != "" {
             self.appDelegate?.transactionInput.address = address
-            // TODO: Implement to confirm page
+            self.navigationController?.pushViewController(ConfirmationViewController.instantiate(), animated: true)
         }
     }
 
