@@ -26,10 +26,10 @@ final class DepositViewController: UIViewController {
         walletAddressLabel.resizeWithHeight()
         view.backgroundColor = UIColor(argb: 0x11000000)
         depositView.topRadius()
-        backButton.fullCornerRadiusWithHeight()
+        backButton.fullCornerRadius()
         backButton.layer.borderWidth = AppConstants.CGFloats.depositButtonBorder
         backButton.layer.borderColor = UIColor.MyTheme.primaryBackground.cgColor
-        icxView.fullCornerRadiusWithHeight()
+        icxView.fullCornerRadius()
         QRView.layer.cornerRadius = AppConstants.CGFloats.cellRadius
         if let address = appDelegate?.wallet?.address {
             walletAddressLabel.text = address

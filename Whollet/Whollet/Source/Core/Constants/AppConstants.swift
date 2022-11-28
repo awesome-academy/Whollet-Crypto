@@ -29,6 +29,13 @@ struct AppConstants {
         static let failedGetCamera = "Failed to get the camera device"
         static let iconShow = "show"
         static let iconHide = "hide"
+        static let allTransaction = "All transaction"
+        static let sent = "sent"
+        static let sendHeader = "Transaction confirmed"
+        static let rejected = "rejected"
+        static let rejectedHeader = "Rejected send"
+        static let dateFormatted = "MMM d, yyyy"
+        static let timeFormatted = "h:mm a"
     }
     
     enum CGFloats {
@@ -46,6 +53,7 @@ struct AppConstants {
         static let toastDuration = 4.0
         static let toastDelay = 4.0
         static let toBigInt = 1000000000000000000.0
+        static let transactionFee = 0.0013
     }
     
     enum Ints {

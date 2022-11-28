@@ -20,7 +20,7 @@ final class ScanQRViewController: UIViewController {
     }
     
     private func configView() {
-        scanNowButton.fullCornerRadiusWithHeight()
+        scanNowButton.fullCornerRadius()
         scanNowButton.resizeTextWithHeight()
     }
     

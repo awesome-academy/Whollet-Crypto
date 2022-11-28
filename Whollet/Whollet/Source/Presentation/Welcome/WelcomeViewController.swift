@@ -24,7 +24,7 @@ final class WelcomeViewController: UIViewController {
             label.resizeWithHeight()
         }
         view.backgroundColor = UIColor.MyTheme.primary
-        loadButton.fullCornerRadiusWithHeight()
+        loadButton.fullCornerRadius()
         loadButton.resizeTextWithHeight()
         createButton.resizeTextWithHeight()
         welcomeLabel.resizeWithHeight()

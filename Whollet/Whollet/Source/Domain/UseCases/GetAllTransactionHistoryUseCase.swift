@@ -1,6 +1,6 @@
 import Foundation
 
-final class GetAllTransactionUseCase {
+final class GetAllTransactionHistoryUseCase {
     private let repository = TransactionHistoryRepositoryImpl()
     
     func get(completion: @escaping ([TransactionDetail]?, Error?) -> Void) {

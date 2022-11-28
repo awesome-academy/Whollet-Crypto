@@ -21,7 +21,7 @@ final class CoinsViewModel: NSObject {
         
         self.getCoinsUseCase.getCoins(params: params) { [weak self] (data, error) -> Void in
             guard let self = self, error == nil, let data = data else { return }
-            self.bsCoins.add(data + (self.bsCoins.value ?? []))
+            self.bsCoins.add((self.bsCoins.value ?? []) + data)
         }
     }
     
