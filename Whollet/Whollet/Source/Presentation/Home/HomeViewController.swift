@@ -119,6 +119,9 @@ final class HomeViewController: UIViewController, StoryboardSceneBased {
         self.navigationController?.pushViewController(amountPageController, animated: true)
     }
     
+    @IBAction private func transactionButtonOnClick(_ sender: UIButton) {
+        self.navigationController?.pushViewController(AllTransactionViewController.instantiate(), animated: true)
+    }
 }
 
 extension HomeViewController: UITableViewDataSource {
