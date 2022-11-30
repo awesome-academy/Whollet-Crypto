@@ -8,7 +8,7 @@ final class AmountViewModel: NSObject {
     
     override init() {
         super.init()
-        getICXBalanceUseCase = GetICXBalanceUseCase()
+        getICXBalanceUseCase = GetICXBalanceUseCase(repository: WalletRepositoryImpl())
         getBalance()
     }
     

@@ -10,9 +10,9 @@ final class TransactionDetailViewModel: NSObject {
     
     override init() {
         super.init()
-        self.sendTransactionUseCase = SendTransactionUseCase()
-        self.getTransactionResultUseCase = GetTransactionResultUseCase()
-        self.saveTransactionHistoryUseCase = SaveTransactionHistoryUseCase()
+        self.sendTransactionUseCase = SendTransactionUseCase(repository: WalletRepositoryImpl())
+        self.getTransactionResultUseCase = GetTransactionResultUseCase(repository: WalletRepositoryImpl())
+        self.saveTransactionHistoryUseCase = SaveTransactionHistoryUseCase(repository: TransactionHistoryRepositoryImpl())
     }
     
     func sendICX(to: String, amount: Double, wallet: Wallet) {

@@ -8,6 +8,17 @@ struct CoinModel: Codable, Equatable {
     let priceChange24H: Double?
     let atlDate: String?
     
+    init() {
+        self.id = ""
+        self.symbol = ""
+        self.image = ""
+        self.name = ""
+        self.currentPrice = 0.0
+        self.priceChange24H = 0.0
+        self.marketCapRank = 0
+        self.atlDate = ""
+    }
+    
     enum CodingKeys: String, CodingKey {
         case id, symbol, name, image
         case marketCapRank = "market_cap_rank"

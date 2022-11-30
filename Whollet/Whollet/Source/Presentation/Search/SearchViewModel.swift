@@ -3,14 +3,14 @@ import Foundation
 final class SearchViewModel: NSObject {
     private var getSearchCoinUseCase: GetSearchCoinUseCase!
     private var getSearchHistoryUseCase: GetSearchHistoryUseCase!
-    private var saveSearchHistoryUseCase: SaveSearchCoinUseCase!
+    private var saveSearchHistoryUseCase: SaveSearchHistoryUseCase!
     private(set) var bsSearchCoin: BehaviorSubject<[SearchCoinModel]> = BehaviorSubject(nil)
     
     override init() {
         super.init()
-        self.getSearchCoinUseCase = GetSearchCoinUseCase()
-        self.getSearchHistoryUseCase = GetSearchHistoryUseCase()
-        self.saveSearchHistoryUseCase = SaveSearchCoinUseCase()
+        self.getSearchCoinUseCase = GetSearchCoinUseCase(coinsRepository: CoinsRepositoryImpl())
+        self.getSearchHistoryUseCase = GetSearchHistoryUseCase(repository: SearchHistoryRepositoryImpl())
+        self.saveSearchHistoryUseCase = SaveSearchHistoryUseCase(repository: SearchHistoryRepositoryImpl())
         getHistory()
     }
     

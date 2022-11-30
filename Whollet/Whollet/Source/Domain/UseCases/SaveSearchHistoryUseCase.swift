@@ -1,7 +1,11 @@
 import Foundation
 
-final class SaveSearchCoinUseCase {
-    private let repository = SearchHistoryRepositoryImpl()
+final class SaveSearchHistoryUseCase {
+    private let repository: SearchHistoryRepository
+    
+    init(repository: SearchHistoryRepository) {
+        self.repository = repository
+    }
     
     func save(_ search: SearchCoinModel) {
         repository.saveSearchHistory(search)
