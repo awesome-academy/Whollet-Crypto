@@ -17,8 +17,8 @@ final class DetailViewModel: NSObject {
     
     override init() {
         super.init()
-        self.getCoinsUseCase = GetCoinsUseCase()
-        self.getChartUseCase = GetChartlUseCase()
+        self.getCoinsUseCase = GetCoinsUseCase(coinsRepository: CoinsRepositoryImpl())
+        self.getChartUseCase = GetChartlUseCase(coinsRepository: CoinsRepositoryImpl())
     }
     
     func getDetail(id: String) {

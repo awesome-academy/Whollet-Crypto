@@ -11,4 +11,12 @@ target 'Whollet' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'ICONKit', :git => 'https://github.com/icon-project/ICONKit'
+  
+  target 'WholletTests' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    inherit! :search_paths
+    use_frameworks!
+    inherit! :search_paths  
+    pod 'ICONKit', :git => 'https://github.com/icon-project/ICONKit'
+  end
 end

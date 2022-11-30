@@ -26,14 +26,25 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "904B1F1C2936AB54009A9CAE"
+            BuildableName = "WholletTests.xctest"
+            BlueprintName = "WholletTests"
+            ReferencedContainer = "container:Whollet.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO"
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DD8DCE55291CFD1600F6BC9F"
+               BlueprintIdentifier = "904B1F1C2936AB54009A9CAE"
                BuildableName = "WholletTests.xctest"
                BlueprintName = "WholletTests"
                ReferencedContainer = "container:Whollet.xcodeproj">

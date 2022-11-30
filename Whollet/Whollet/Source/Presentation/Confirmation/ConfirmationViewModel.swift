@@ -10,7 +10,7 @@ final class ConfirmationViewModel: NSObject {
     
     override init() {
         super.init()
-        self.getCoinsUseCase = GetCoinsUseCase()
+        self.getCoinsUseCase = GetCoinsUseCase(coinsRepository: CoinsRepositoryImpl())
         self.getICXPrice()
     }
     

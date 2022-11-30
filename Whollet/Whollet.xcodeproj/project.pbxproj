@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E7167AFD8C52FD27299524F /* Pods_Whollet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A09B2222917605F0EEF7F0 /* Pods_Whollet.framework */; };
+		42E31443F9C2649E976A0A5C /* Pods_WholletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7B173530678E00E95BD5D0 /* Pods_WholletTests.framework */; };
 		900766EF292BBF280030F020 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900766ED292BBF280030F020 /* SearchTableViewCell.swift */; };
 		900766F0292BBF280030F020 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 900766EE292BBF280030F020 /* SearchTableViewCell.xib */; };
 		900766F3292BC9D60030F020 /* Whollet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 900766F1292BC9D60030F020 /* Whollet.xcdatamodeld */; };
@@ -16,6 +17,22 @@
 		900766FA292BCCC30030F020 /* SearchHistoryRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900766F9292BCCC30030F020 /* SearchHistoryRepositoryImpl.swift */; };
 		900766FC292BCDA20030F020 /* GetSearchHistoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900766FB292BCDA20030F020 /* GetSearchHistoryUseCase.swift */; };
 		901730A1292C8840003D9CDD /* SearchHistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901730A0292C8840003D9CDD /* SearchHistoryRepository.swift */; };
+		904B1F2C2936ABC4009A9CAE /* MockCoinsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F272936ABC4009A9CAE /* MockCoinsRepository.swift */; };
+		904B1F2D2936ABC4009A9CAE /* GetCoinsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F292936ABC4009A9CAE /* GetCoinsUseCaseTests.swift */; };
+		904B1F302936B85C009A9CAE /* GetChartUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F2F2936B85C009A9CAE /* GetChartUseCaseTests.swift */; };
+		904B1F322936BBE0009A9CAE /* GetSeachCoinUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F312936BBE0009A9CAE /* GetSeachCoinUseCaseTests.swift */; };
+		904B1F342936BD93009A9CAE /* MockSearchHistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F332936BD93009A9CAE /* MockSearchHistoryRepository.swift */; };
+		904B1F362936BEB2009A9CAE /* SaveSearchHistoryUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F352936BEB2009A9CAE /* SaveSearchHistoryUseCaseTests.swift */; };
+		904B1F382936C128009A9CAE /* GetSearchHistoryUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F372936C128009A9CAE /* GetSearchHistoryUseCaseTests.swift */; };
+		904B1F3A2936C442009A9CAE /* MockWalletRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F392936C442009A9CAE /* MockWalletRepository.swift */; };
+		904B1F3E2936C599009A9CAE /* CreateWalletUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F3D2936C599009A9CAE /* CreateWalletUseCaseTests.swift */; };
+		904B1F402936C6AF009A9CAE /* LoadWalletUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F3F2936C6AF009A9CAE /* LoadWalletUseCaseTests.swift */; };
+		904B1F422936C8F4009A9CAE /* GetICXBalanceUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F412936C8F4009A9CAE /* GetICXBalanceUseCaseTests.swift */; };
+		904B1F442936CA20009A9CAE /* GetTransactionResultUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F432936CA20009A9CAE /* GetTransactionResultUseCaseTests.swift */; };
+		904B1F462936CB9C009A9CAE /* SendTransactionUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F452936CB9C009A9CAE /* SendTransactionUseCaseTests.swift */; };
+		904B1F482936CD89009A9CAE /* MockTransactionHistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F472936CD89009A9CAE /* MockTransactionHistoryRepository.swift */; };
+		904B1F4A2936CF3B009A9CAE /* SaveTransactionUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F492936CF3B009A9CAE /* SaveTransactionUseCaseTests.swift */; };
+		904B1F4C2936CFCF009A9CAE /* GetAllTransactionHistoryUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B1F4B2936CFCF009A9CAE /* GetAllTransactionHistoryUseCaseTests.swift */; };
 		906C2187292CAABB0017740A /* TitilliumWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 906C2183292CAABB0017740A /* TitilliumWeb-Bold.ttf */; };
 		906C2188292CAABB0017740A /* TitilliumWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 906C2184292CAABB0017740A /* TitilliumWeb-Regular.ttf */; };
 		906C2189292CAABB0017740A /* TitilliumWeb-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 906C2185292CAABB0017740A /* TitilliumWeb-SemiBold.ttf */; };
@@ -115,14 +132,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DD8DCE57291CFD1600F6BC9F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD8DCE38291CFD1400F6BC9F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DD8DCE3F291CFD1400F6BC9F;
-			remoteInfo = Whollet;
-		};
-		DD8DCE61291CFD1700F6BC9F /* PBXContainerItemProxy */ = {
+		904B1F212936AB55009A9CAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD8DCE38291CFD1400F6BC9F /* Project object */;
 			proxyType = 1;
@@ -132,6 +142,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		069641628297F40F8FBD6A04 /* Pods-WholletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WholletTests.release.xcconfig"; path = "Target Support Files/Pods-WholletTests/Pods-WholletTests.release.xcconfig"; sourceTree = "<group>"; };
 		19A09B2222917605F0EEF7F0 /* Pods_Whollet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whollet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F3BA7BD8F952254624C86A /* Pods-Whollet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whollet.debug.xcconfig"; path = "Target Support Files/Pods-Whollet/Pods-Whollet.debug.xcconfig"; sourceTree = "<group>"; };
 		900766ED292BBF280030F020 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
@@ -142,6 +153,23 @@
 		900766F9292BCCC30030F020 /* SearchHistoryRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryRepositoryImpl.swift; sourceTree = "<group>"; };
 		900766FB292BCDA20030F020 /* GetSearchHistoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSearchHistoryUseCase.swift; sourceTree = "<group>"; };
 		901730A0292C8840003D9CDD /* SearchHistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryRepository.swift; sourceTree = "<group>"; };
+		904B1F1D2936AB54009A9CAE /* WholletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WholletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		904B1F272936ABC4009A9CAE /* MockCoinsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCoinsRepository.swift; sourceTree = "<group>"; };
+		904B1F292936ABC4009A9CAE /* GetCoinsUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCoinsUseCaseTests.swift; sourceTree = "<group>"; };
+		904B1F2F2936B85C009A9CAE /* GetChartUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChartUseCaseTests.swift; sourceTree = "<group>"; };
+		904B1F312936BBE0009A9CAE /* GetSeachCoinUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeachCoinUseCaseTests.swift; sourceTree = "<group>"; };
+		904B1F332936BD93009A9CAE /* MockSearchHistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchHistoryRepository.swift; sourceTree = "<group>"; };
+		904B1F352936BEB2009A9CAE /* SaveSearchHistoryUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveSearchHistoryUseCaseTests.swift; sourceTree = "<group>"; };
+		904B1F372936C128009A9CAE /* GetSearchHistoryUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSearchHistoryUseCaseTests.swift; sourceTree = "<group>"; };
+		904B1F392936C442009A9CAE /* MockWalletRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWalletRepository.swift; sourceTree = "<group>"; };
+		904B1F3D2936C599009A9CAE /* CreateWalletUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletUseCaseTests.swift; sourceTree = "<group>"; };
+		904B1F3F2936C6AF009A9CAE /* LoadWalletUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadWalletUseCaseTests.swift; sourceTree = "<group>"; };
+		904B1F412936C8F4009A9CAE /* GetICXBalanceUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetICXBalanceUseCaseTests.swift; sourceTree = "<group>"; };
+		904B1F432936CA20009A9CAE /* GetTransactionResultUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTransactionResultUseCaseTests.swift; sourceTree = "<group>"; };
+		904B1F452936CB9C009A9CAE /* SendTransactionUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTransactionUseCaseTests.swift; sourceTree = "<group>"; };
+		904B1F472936CD89009A9CAE /* MockTransactionHistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactionHistoryRepository.swift; sourceTree = "<group>"; };
+		904B1F492936CF3B009A9CAE /* SaveTransactionUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTransactionUseCaseTests.swift; sourceTree = "<group>"; };
+		904B1F4B2936CFCF009A9CAE /* GetAllTransactionHistoryUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllTransactionHistoryUseCaseTests.swift; sourceTree = "<group>"; };
 		906C2183292CAABB0017740A /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
 		906C2184292CAABB0017740A /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; };
 		906C2185292CAABB0017740A /* TitilliumWeb-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -219,8 +247,6 @@
 		DD8DCE43291CFD1400F6BC9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD8DCE4C291CFD1600F6BC9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD8DCE51291CFD1600F6BC9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD8DCE56291CFD1600F6BC9F /* WholletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WholletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD8DCE60291CFD1700F6BC9F /* WholletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WholletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9E097E2921D95E00308D34 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		DD9E098E2921E9AC00308D34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD9E09902921E9AC00308D34 /* OnboardingScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnboardingScreen.storyboard; sourceTree = "<group>"; };
@@ -240,10 +266,20 @@
 		DDAA054329249B34007E61FA /* CoinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinTableViewCell.xib; sourceTree = "<group>"; };
 		DDAA054629249B56007E61FA /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
 		DDAA054829249BC1007E61FA /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		ED7B173530678E00E95BD5D0 /* Pods_WholletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WholletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFB2F9F16BC36AE3E5F5AC3 /* Pods-Whollet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whollet.release.xcconfig"; path = "Target Support Files/Pods-Whollet/Pods-Whollet.release.xcconfig"; sourceTree = "<group>"; };
+		F3F58B7E7A805FE82F93B2CF /* Pods-WholletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WholletTests.debug.xcconfig"; path = "Target Support Files/Pods-WholletTests/Pods-WholletTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		904B1F1A2936AB54009A9CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42E31443F9C2649E976A0A5C /* Pods_WholletTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD8DCE3D291CFD1400F6BC9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,20 +290,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD8DCE53291CFD1600F6BC9F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD8DCE5D291CFD1700F6BC9F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -275,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				19A09B2222917605F0EEF7F0 /* Pods_Whollet.framework */,
+				ED7B173530678E00E95BD5D0 /* Pods_WholletTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -294,6 +317,45 @@
 				900766F5292BCB040030F020 /* LocalDataMamager.swift */,
 			);
 			path = Local;
+			sourceTree = "<group>";
+		};
+		904B1F1E2936AB54009A9CAE /* WholletTests */ = {
+			isa = PBXGroup;
+			children = (
+				904B1F262936ABC4009A9CAE /* MockRepository */,
+				904B1F282936ABC4009A9CAE /* UseCaseTests */,
+			);
+			path = WholletTests;
+			sourceTree = "<group>";
+		};
+		904B1F262936ABC4009A9CAE /* MockRepository */ = {
+			isa = PBXGroup;
+			children = (
+				904B1F272936ABC4009A9CAE /* MockCoinsRepository.swift */,
+				904B1F332936BD93009A9CAE /* MockSearchHistoryRepository.swift */,
+				904B1F392936C442009A9CAE /* MockWalletRepository.swift */,
+				904B1F472936CD89009A9CAE /* MockTransactionHistoryRepository.swift */,
+			);
+			path = MockRepository;
+			sourceTree = "<group>";
+		};
+		904B1F282936ABC4009A9CAE /* UseCaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				904B1F292936ABC4009A9CAE /* GetCoinsUseCaseTests.swift */,
+				904B1F2F2936B85C009A9CAE /* GetChartUseCaseTests.swift */,
+				904B1F312936BBE0009A9CAE /* GetSeachCoinUseCaseTests.swift */,
+				904B1F352936BEB2009A9CAE /* SaveSearchHistoryUseCaseTests.swift */,
+				904B1F372936C128009A9CAE /* GetSearchHistoryUseCaseTests.swift */,
+				904B1F3D2936C599009A9CAE /* CreateWalletUseCaseTests.swift */,
+				904B1F3F2936C6AF009A9CAE /* LoadWalletUseCaseTests.swift */,
+				904B1F412936C8F4009A9CAE /* GetICXBalanceUseCaseTests.swift */,
+				904B1F452936CB9C009A9CAE /* SendTransactionUseCaseTests.swift */,
+				904B1F432936CA20009A9CAE /* GetTransactionResultUseCaseTests.swift */,
+				904B1F492936CF3B009A9CAE /* SaveTransactionUseCaseTests.swift */,
+				904B1F4B2936CFCF009A9CAE /* GetAllTransactionHistoryUseCaseTests.swift */,
+			);
+			path = UseCaseTests;
 			sourceTree = "<group>";
 		};
 		906C2182292CAABB0017740A /* Font */ = {
@@ -424,6 +486,8 @@
 			children = (
 				61F3BA7BD8F952254624C86A /* Pods-Whollet.debug.xcconfig */,
 				EDFB2F9F16BC36AE3E5F5AC3 /* Pods-Whollet.release.xcconfig */,
+				F3F58B7E7A805FE82F93B2CF /* Pods-WholletTests.debug.xcconfig */,
+				069641628297F40F8FBD6A04 /* Pods-WholletTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -584,6 +648,7 @@
 			isa = PBXGroup;
 			children = (
 				DD8DCE42291CFD1400F6BC9F /* Whollet */,
+				904B1F1E2936AB54009A9CAE /* WholletTests */,
 				DD8DCE41291CFD1400F6BC9F /* Products */,
 				BCB635324DC014C757E4A00F /* Pods */,
 				8B2963C610039CD066CE671E /* Frameworks */,
@@ -594,8 +659,7 @@
 			isa = PBXGroup;
 			children = (
 				DD8DCE40291CFD1400F6BC9F /* Whollet.app */,
-				DD8DCE56291CFD1600F6BC9F /* WholletTests.xctest */,
-				DD8DCE60291CFD1700F6BC9F /* WholletUITests.xctest */,
+				904B1F1D2936AB54009A9CAE /* WholletTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -757,6 +821,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		904B1F1C2936AB54009A9CAE /* WholletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 904B1F232936AB55009A9CAE /* Build configuration list for PBXNativeTarget "WholletTests" */;
+			buildPhases = (
+				84957E008A19645A0B46642B /* [CP] Check Pods Manifest.lock */,
+				904B1F192936AB54009A9CAE /* Sources */,
+				904B1F1A2936AB54009A9CAE /* Frameworks */,
+				904B1F1B2936AB54009A9CAE /* Resources */,
+				F511F9CFE6EB12BF890FA434 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				904B1F222936AB55009A9CAE /* PBXTargetDependency */,
+			);
+			name = WholletTests;
+			productName = WholletTests;
+			productReference = 904B1F1D2936AB54009A9CAE /* WholletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DD8DCE3F291CFD1400F6BC9F /* Whollet */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD8DCE6A291CFD1700F6BC9F /* Build configuration list for PBXNativeTarget "Whollet" */;
@@ -781,42 +865,6 @@
 			productReference = DD8DCE40291CFD1400F6BC9F /* Whollet.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DD8DCE55291CFD1600F6BC9F /* WholletTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DD8DCE6D291CFD1700F6BC9F /* Build configuration list for PBXNativeTarget "WholletTests" */;
-			buildPhases = (
-				DD8DCE52291CFD1600F6BC9F /* Sources */,
-				DD8DCE53291CFD1600F6BC9F /* Frameworks */,
-				DD8DCE54291CFD1600F6BC9F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DD8DCE58291CFD1600F6BC9F /* PBXTargetDependency */,
-			);
-			name = WholletTests;
-			productName = WholletTests;
-			productReference = DD8DCE56291CFD1600F6BC9F /* WholletTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DD8DCE5F291CFD1700F6BC9F /* WholletUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DD8DCE70291CFD1700F6BC9F /* Build configuration list for PBXNativeTarget "WholletUITests" */;
-			buildPhases = (
-				DD8DCE5C291CFD1700F6BC9F /* Sources */,
-				DD8DCE5D291CFD1700F6BC9F /* Frameworks */,
-				DD8DCE5E291CFD1700F6BC9F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DD8DCE62291CFD1700F6BC9F /* PBXTargetDependency */,
-			);
-			name = WholletUITests;
-			productName = WholletUITests;
-			productReference = DD8DCE60291CFD1700F6BC9F /* WholletUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -827,16 +875,12 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					904B1F1C2936AB54009A9CAE = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = DD8DCE3F291CFD1400F6BC9F;
+					};
 					DD8DCE3F291CFD1400F6BC9F = {
 						CreatedOnToolsVersion = 14.1;
-					};
-					DD8DCE55291CFD1600F6BC9F = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = DD8DCE3F291CFD1400F6BC9F;
-					};
-					DD8DCE5F291CFD1700F6BC9F = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = DD8DCE3F291CFD1400F6BC9F;
 					};
 				};
 			};
@@ -858,13 +902,19 @@
 			projectRoot = "";
 			targets = (
 				DD8DCE3F291CFD1400F6BC9F /* Whollet */,
-				DD8DCE55291CFD1600F6BC9F /* WholletTests */,
-				DD8DCE5F291CFD1700F6BC9F /* WholletUITests */,
+				904B1F1C2936AB54009A9CAE /* WholletTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		904B1F1B2936AB54009A9CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD8DCE3E291CFD1400F6BC9F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -896,23 +946,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD8DCE54291CFD1600F6BC9F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD8DCE5E291CFD1700F6BC9F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		84957E008A19645A0B46642B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WholletTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8FF3B0FDBA228493DDB4C1EE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -969,9 +1027,49 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		F511F9CFE6EB12BF890FA434 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WholletTests/Pods-WholletTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WholletTests/Pods-WholletTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WholletTests/Pods-WholletTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		904B1F192936AB54009A9CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904B1F442936CA20009A9CAE /* GetTransactionResultUseCaseTests.swift in Sources */,
+				904B1F402936C6AF009A9CAE /* LoadWalletUseCaseTests.swift in Sources */,
+				904B1F2C2936ABC4009A9CAE /* MockCoinsRepository.swift in Sources */,
+				904B1F482936CD89009A9CAE /* MockTransactionHistoryRepository.swift in Sources */,
+				904B1F362936BEB2009A9CAE /* SaveSearchHistoryUseCaseTests.swift in Sources */,
+				904B1F3A2936C442009A9CAE /* MockWalletRepository.swift in Sources */,
+				904B1F302936B85C009A9CAE /* GetChartUseCaseTests.swift in Sources */,
+				904B1F2D2936ABC4009A9CAE /* GetCoinsUseCaseTests.swift in Sources */,
+				904B1F422936C8F4009A9CAE /* GetICXBalanceUseCaseTests.swift in Sources */,
+				904B1F322936BBE0009A9CAE /* GetSeachCoinUseCaseTests.swift in Sources */,
+				904B1F462936CB9C009A9CAE /* SendTransactionUseCaseTests.swift in Sources */,
+				904B1F3E2936C599009A9CAE /* CreateWalletUseCaseTests.swift in Sources */,
+				904B1F4A2936CF3B009A9CAE /* SaveTransactionUseCaseTests.swift in Sources */,
+				904B1F4C2936CFCF009A9CAE /* GetAllTransactionHistoryUseCaseTests.swift in Sources */,
+				904B1F382936C128009A9CAE /* GetSearchHistoryUseCaseTests.swift in Sources */,
+				904B1F342936BD93009A9CAE /* MockSearchHistoryRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD8DCE3C291CFD1400F6BC9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1057,32 +1155,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD8DCE52291CFD1600F6BC9F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD8DCE5C291CFD1700F6BC9F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DD8DCE58291CFD1600F6BC9F /* PBXTargetDependency */ = {
+		904B1F222936AB55009A9CAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DD8DCE3F291CFD1400F6BC9F /* Whollet */;
-			targetProxy = DD8DCE57291CFD1600F6BC9F /* PBXContainerItemProxy */;
-		};
-		DD8DCE62291CFD1700F6BC9F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DD8DCE3F291CFD1400F6BC9F /* Whollet */;
-			targetProxy = DD8DCE61291CFD1700F6BC9F /* PBXContainerItemProxy */;
+			targetProxy = 904B1F212936AB55009A9CAE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1098,6 +1177,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		904B1F242936AB55009A9CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F58B7E7A805FE82F93B2CF /* Pods-WholletTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4946RK2ZAP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sun.WholletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whollet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Whollet";
+			};
+			name = Debug;
+		};
+		904B1F252936AB55009A9CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 069641628297F40F8FBD6A04 /* Pods-WholletTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4946RK2ZAP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sun.WholletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whollet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Whollet";
+			};
+			name = Release;
+		};
 		DD8DCE68291CFD1700F6BC9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1272,85 +1391,18 @@
 			};
 			name = Release;
 		};
-		DD8DCE6E291CFD1700F6BC9F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4946RK2ZAP;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sun.com.WholletTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whollet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Whollet";
-			};
-			name = Debug;
-		};
-		DD8DCE6F291CFD1700F6BC9F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4946RK2ZAP;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sun.com.WholletTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whollet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Whollet";
-			};
-			name = Release;
-		};
-		DD8DCE71291CFD1700F6BC9F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4946RK2ZAP;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sun.com.WholletUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Whollet;
-			};
-			name = Debug;
-		};
-		DD8DCE72291CFD1700F6BC9F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4946RK2ZAP;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sun.com.WholletUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Whollet;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		904B1F232936AB55009A9CAE /* Build configuration list for PBXNativeTarget "WholletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				904B1F242936AB55009A9CAE /* Debug */,
+				904B1F252936AB55009A9CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DD8DCE3B291CFD1400F6BC9F /* Build configuration list for PBXProject "Whollet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1365,24 +1417,6 @@
 			buildConfigurations = (
 				DD8DCE6B291CFD1700F6BC9F /* Debug */,
 				DD8DCE6C291CFD1700F6BC9F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DD8DCE6D291CFD1700F6BC9F /* Build configuration list for PBXNativeTarget "WholletTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DD8DCE6E291CFD1700F6BC9F /* Debug */,
-				DD8DCE6F291CFD1700F6BC9F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DD8DCE70291CFD1700F6BC9F /* Build configuration list for PBXNativeTarget "WholletUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DD8DCE71291CFD1700F6BC9F /* Debug */,
-				DD8DCE72291CFD1700F6BC9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

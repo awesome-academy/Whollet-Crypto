@@ -7,7 +7,7 @@ final class AllTransactionViewModel: NSObject {
     
     override init() {
         super.init()
-        getAllTransactionHistoryUseCase = GetAllTransactionHistoryUseCase()
+        getAllTransactionHistoryUseCase = GetAllTransactionHistoryUseCase(repository: TransactionHistoryRepositoryImpl())
         getTransactions()
     }
     

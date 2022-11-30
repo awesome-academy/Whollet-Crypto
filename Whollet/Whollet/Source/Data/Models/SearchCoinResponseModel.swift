@@ -20,6 +20,15 @@ struct SearchCoinModel: Codable {
         self.large = item.value(forKey: "large") as? String
         self.marketCapRank = item.value(forKey: "market_cap_rank") as? Int
     }
+    
+    init() {
+        self.id = ""
+        self.symbol = ""
+        self.apiSymbol = ""
+        self.name = ""
+        self.large = ""
+        self.marketCapRank = 0
+    }
 }
 
 extension SearchCoinModel: Equatable {

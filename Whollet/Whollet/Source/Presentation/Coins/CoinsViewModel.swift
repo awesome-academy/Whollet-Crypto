@@ -7,7 +7,7 @@ final class CoinsViewModel: NSObject {
 
     override init() {
         super.init()
-        self.getCoinsUseCase = GetCoinsUseCase()
+        self.getCoinsUseCase = GetCoinsUseCase(coinsRepository: CoinsRepositoryImpl())
         getCoins()
     }
 

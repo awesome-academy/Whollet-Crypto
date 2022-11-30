@@ -19,6 +19,16 @@ struct TransactionDetail: Equatable, Codable {
         self.totalAmountUSD = totalAmountUSD
         self.time = time
     }
+    
+    init() {
+        self.from = ""
+        self.to = ""
+        self.id = ""
+        self.status = ""
+        self.totalAmount = 0.0
+        self.totalAmountUSD = 0.0
+        self.time = nil
+    }
 
     init(item: NSManagedObject) {
         self.from = item.value(forKey: "from") as? String

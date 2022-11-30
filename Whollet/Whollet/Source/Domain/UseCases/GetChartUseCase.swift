@@ -1,9 +1,13 @@
 import Foundation
 
 final class GetChartlUseCase {
-    private let coinRepository = CoinsRepositoryImpl()
+    private let coinsRepository: CoinsRepository
+    
+    init(coinsRepository: CoinsRepository) {
+        self.coinsRepository = coinsRepository
+    }
     
     func getDetailChart(params: ChartRequestParams, completion: @escaping (ChartResponseModel?, Error?) -> Void) {
-        coinRepository.getCoinDetail(params: params, completion: completion)
+        return coinsRepository.getCoinDetail(params: params, completion: completion)
     }
 }

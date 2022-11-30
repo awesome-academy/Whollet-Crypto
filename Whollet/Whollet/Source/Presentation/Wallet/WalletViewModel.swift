@@ -17,8 +17,8 @@ final class WalletViewModel: NSObject {
     override init() {
         super.init()
         bsWalletState.add(.initial)
-        self.createWalletUseCase = CreateWalletUseCase()
-        self.loadWalletUseCase = LoadWalletUseCase()
+        self.createWalletUseCase = CreateWalletUseCase(walletRepository: WalletRepositoryImpl())
+        self.loadWalletUseCase = LoadWalletUseCase(walletRepository: WalletRepositoryImpl())
     }
     
     func createWallet() {

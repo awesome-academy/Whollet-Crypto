@@ -1,9 +1,13 @@
 import Foundation
 
 final class GetSearchCoinUseCase {
-    private let coinRepository = CoinsRepositoryImpl()
+    private let coinsRepository: CoinsRepository
+    
+    init(coinsRepository: CoinsRepository) {
+        self.coinsRepository = coinsRepository
+    }
     
     func getSearchCoin(params: SearchCoinRequestParams, completion: @escaping (SearchCoinResponseModel?, Error?) -> Void) {
-        coinRepository.getSearchCoin(params: params, completion: completion)
+        coinsRepository.getSearchCoin(params: params, completion: completion)
     }
 }
